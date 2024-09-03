@@ -2,6 +2,7 @@
   "name": "comedores",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://edipoarg.github.io/MapaDeLosComedores",
   "type": "module",
   "scripts": {
     "dev": "vite",

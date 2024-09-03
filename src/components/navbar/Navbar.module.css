@@ -1,0 +1,20 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    padding: 1vh 2vw;
+    width: 100%;
+    display: flex;
+    gap: 1vh;
+    z-index: 3000;
+    background-color: white;
+}
+
+.logo{
+    font-size: 1rem;
+}
+
+.us{
+    font-size: 1rem;
+}

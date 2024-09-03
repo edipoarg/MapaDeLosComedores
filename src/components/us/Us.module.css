@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  

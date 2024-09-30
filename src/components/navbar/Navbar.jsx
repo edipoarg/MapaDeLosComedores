@@ -1,5 +1,6 @@
 import styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
+import { TiThMenu } from "react-icons/ti";
 
 function Navbar() {
 
@@ -9,7 +10,7 @@ function Navbar() {
    <h1 className={styles.logo}>Mapa de los Comedores</h1>
    </Link >
    <Link to='/us'>
-   <h1 className={styles.us}>Us</h1>
+   <h1 className={styles.us}><TiThMenu/></h1>
    </Link >
    </section>  
    )

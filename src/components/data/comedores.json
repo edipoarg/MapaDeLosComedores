@@ -13,7 +13,7 @@
       "Días de funcionamiento": "Lunes a viernes",
       "Horarios de funcionamiento": "10 a 16",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "Desayuno y almuerzo",
+      "Prestacion alimentaria": "merendero",
       "Modalidad": ""
     },
     {
@@ -30,7 +30,7 @@
       "Días de funcionamiento": "Lunes a viernes",
       "Horarios de funcionamiento": "8 a 12 y de 16 a 20",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "Almuerzo y cena",
+      "Prestacion alimentaria": "parroquia",
       "Modalidad": ""
     },
     {
@@ -47,7 +47,7 @@
       "Días de funcionamiento": "Lunes a viernes",
       "Horarios de funcionamiento": "",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "Almuerzo, merienda, desayuno y cena",
+      "Prestacion alimentaria": "merendero",
       "Modalidad": ""
     },
     {
@@ -64,7 +64,7 @@
       "Días de funcionamiento": "Sábado",
       "Horarios de funcionamiento": "8 a 13h",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "Almuerzo",
+      "Prestacion alimentaria": "comedor",
       "Modalidad": ""
     },
     {
@@ -81,7 +81,7 @@
       "Días de funcionamiento": "Lunes a Viernes",
       "Horarios de funcionamiento": "8 a 17hs",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "Almuerzo",
+      "Prestacion alimentaria": "olla popular",
       "Modalidad": ""
     },
     {
@@ -98,7 +98,7 @@
       "Días de funcionamiento": "Lunes a Viernes",
       "Horarios de funcionamiento": "",
       "Cuantas raciones diarias entrega?": "",
-      "Prestacion alimentaria": "",
+      "Prestacion alimentaria": "comedor",
       "Modalidad": ""
     }
   ]

@@ -43,10 +43,10 @@ function Mapa() {
           // Opciones de mapa adicionales si es necesario
         }}
       >
-        <NavigationControl position="top-right" />
+        <NavigationControl position="top-left" />
         <Markers comedores={comedores} onSelect={handleSelectComedor} />
+        {selectedComedor && <Screen comedor={selectedComedor} />}
       </MapGL>
-      {selectedComedor && <Screen comedor={selectedComedor} />}
     </div>
   );
 }

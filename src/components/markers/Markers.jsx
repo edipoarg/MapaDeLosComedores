@@ -1,12 +1,13 @@
+// Markers.jsx
 import React from "react";
 import { Marker } from "react-map-gl/maplibre";
+import Daytime from "../daytime/Daytime"; // Importar el nuevo componente
 import styles from './Markers.module.css';
 
 function Markers({ comedores, onSelect }) {
   return (
     <>
       {comedores.map((comedor, index) => {
-        // Asegúrate de que las coordenadas estén en el formato correcto
         const [latitude, longitude] = comedor.Coordenadas.split(",").map(Number);
         return (
           <Marker
@@ -15,7 +16,7 @@ function Markers({ comedores, onSelect }) {
             latitude={latitude}
             onClick={() => onSelect(comedor)}
           >
-            <div className={styles.marker}></div>
+            <Daytime prestacionAlimentaria={comedor["Prestacion alimentaria"]} /> {/* Usar Daytime aquí */}
           </Marker>
         );
       })}

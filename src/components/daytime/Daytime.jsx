@@ -5,32 +5,29 @@ import { PiCookingPot, PiBowlSteam } from "react-icons/pi";
 import { MdOutlineChurch } from "react-icons/md";
 
 const Daytime = ({ prestacionAlimentaria }) => {
-  // Verificar que el valor se está recibiendo correctamente
-  console.log("Prestacion Alimentaria:", prestacionAlimentaria);
-  
   let icon = null;
   let backgroundColor = "";
 
   switch (prestacionAlimentaria) {
-    case "comedor":
-      icon = <GiKnifeFork />;
+    case "Comedor":
+      icon = <GiKnifeFork style={{ color: "#69a7f5", fontSize: "15px" }} />;
       backgroundColor = "#3469eb";
       break;
-    case "merendero":
-      icon = <PiBowlSteam />;
+    case "Merendero":
+      icon = <PiBowlSteam style={{ color: "#9366eb", fontSize: "15px" }} />;
       backgroundColor = "#ff8ce9"; 
       break;
-    case "olla popular":
-      icon = <PiCookingPot />;
+    case "Olla popular":
+      icon = <PiCookingPot style={{ color: "#39b00c", fontSize: "15px" }} />;
       backgroundColor = "#afeb00";
       break;
-    case "parroquia":
-      icon = <MdOutlineChurch />;
+    case "Parroquia":
+      icon = <MdOutlineChurch style={{ color: "#f77b63", fontSize: "15px" }} />;
       backgroundColor = "#eeff00"; 
       break;
     default:
-      icon = <GiKnifeFork />;
-      backgroundColor = "gray"; // Valor por defecto
+      icon = <GiKnifeFork style={{ color: "#f77b63", fontSize: "15px" }} />;
+      backgroundColor = "#eeff00"; // Valor por defecto
   }
 
   return (
@@ -44,6 +41,8 @@ const Daytime = ({ prestacionAlimentaria }) => {
         justifyContent: "center",
         color: "black",
         fontSize: "20px",
+        maxWidth: "5vw",
+        border: "solid 1px black",
       }}
     >
       {icon}

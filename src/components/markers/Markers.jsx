@@ -1,6 +1,6 @@
 import React from "react";
 import { Marker } from "react-map-gl/maplibre";
-import Daytime from "../daytime/Daytime"; // Importar el componente Daytime
+import Daytime from "../daytime/Daytime";
 
 function Markers({ comedores, onSelect }) {
   return (
@@ -8,14 +8,19 @@ function Markers({ comedores, onSelect }) {
       {comedores.map((comedor, index) => {
         const [latitude, longitude] = comedor.Coordenadas.split(",").map(Number);
 
-        // Verificar si las coordenadas son válidas antes de renderizar el marcador
-        if (
-          isNaN(latitude) ||
-          isNaN(longitude) ||
-          latitude === 0 ||
-          longitude === 0
-        ) {
-          return null; // No renderizar si las coordenadas no son válidas
+        if (isNaN(latitude) || isNaN(longitude) || latitude === 0 || longitude === 0) {
+          return null;
+        }
+
+        // Determinar el tamaño del pin según las raciones diarias
+        let size;
+        const racionesDiarias = comedor["Cuantas raciones diarias entrega?"];
+        if (racionesDiarias <= 100) {
+          size = "small"; // Tamaño pequeño
+        } else if (racionesDiarias <= 500) {
+          size = "medium"; // Tamaño mediano
+        } else {
+          size = "large"; // Tamaño grande
         }
 
         return (
@@ -25,7 +30,7 @@ function Markers({ comedores, onSelect }) {
             latitude={latitude}
             onClick={() => onSelect(comedor)}
           >
-            <Daytime prestacionAlimentaria={comedor["Tipo de espacio"]} />
+            <Daytime prestacionAlimentaria={comedor["Tipo de espacio"]} size={size} />
           </Marker>
         );
       })}

@@ -16,8 +16,8 @@ function Mapa() {
       minZoom: 1,
       maxZoom: 25,
       maxBounds: [
-        [-58.58, -34.8], // Límite inferior-izquierdo
-        [-58.30, -34.56], // Límite superior-derecho
+        [-58.7, -34.8], // Límite inferior-izquierdo
+        [-58.2, -34.44], // Límite superior-derecho
       ],
     },
     style: {

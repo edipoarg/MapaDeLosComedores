@@ -12,12 +12,12 @@ function Mapa() {
     initialViewState: {
       longitude: 58.3816,
       latitude: -34.6037,
-      zoom: 1.5,
+      zoom: 1,
       minZoom: 1,
       maxZoom: 25,
       maxBounds: [
-        [-58.7, -34.8], // Límite inferior-izquierdo
-        [-58.2, -34.44], // Límite superior-derecho
+        [-58.9, -35], // Límite inferior-izquierdo
+        [-58, -34.44], // Límite superior-derecho
       ],
     },
     style: {

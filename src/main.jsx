@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import List from "./List/List.jsx";
 import Us from './components/us/Us.jsx';
 
 
@@ -16,6 +17,7 @@ const router = createHashRouter([
     element: <Root />,
     children: [
       { path: "/", element: <App /> },
+      { path: "/listado", element: <List /> },
       { path: "/us", element: <Us /> },
 
     ]

@@ -1,11 +1,17 @@
 /* DaytimeSky.module.css */
+
+.dataIcons{
+  display: flex;
+  margin-top: -8vh;
+  width: 30vw;
+
+}
 .container {
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  margin-top: -8vh;
   opacity: 0.8;
   padding: 10px;
   border: solid 4px white;
@@ -13,6 +19,18 @@
   height: 10vw;
   background-color: #ebebeb;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.raciones {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0);
+  padding: 1rem 0.8rem;
+  border-radius: 100px;
+  color: #ebebeb;
+  left: 10vw;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5rem 0.8rem;
 }
 
 .icon {
@@ -27,7 +45,6 @@
     align-items: center;
     justify-content: center;
     color: black;
-    margin-top: -8vh;
     opacity: 0.8;
     padding: 10px;
     border: solid 4px white;
@@ -36,6 +53,7 @@
     background-color: #ebebeb;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
   }
+  
   
   .icon {
     font-size: 8vh;

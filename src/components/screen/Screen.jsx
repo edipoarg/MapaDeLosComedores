@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import styles from './Screen.module.css';
-import DaytimeSky from '../daytimeSky/daytimeSky'; 
+import DaytimeSky from '../daytimeSky/daytimeSky';
 
 function Screen({ comedor }) {
   if (!comedor) {
@@ -10,11 +10,8 @@ function Screen({ comedor }) {
   const getTitleColor = (tipoEspacio) => {
     switch (tipoEspacio) {
       case "Comedor":
-        return "#ebebeb";
       case "Merendero":
-        return "#ebebeb";
       case "Olla popular":
-        return "#ebebeb";
       case "Parroquia":
         return "#ebebeb";
       default:
@@ -25,7 +22,7 @@ function Screen({ comedor }) {
   const getBackgroundColor = (tipoEspacio) => {
     switch (tipoEspacio) {
       case "Comedor":
-        return "#3469eb";
+        return "#0dceea";
       case "Merendero":
         return "#ff8ce9";
       case "Olla popular":
@@ -45,11 +42,15 @@ function Screen({ comedor }) {
         className={styles.timeSection}
         style={{ backgroundColor: getTitleColor(tipoEspacio) }}
       >
-        <DaytimeSky prestacionAlimentaria={comedor["Prestacion alimentaria"]} />
+        <DaytimeSky 
+          prestacionAlimentaria={comedor["Prestacion alimentaria"]} 
+          raciones={comedor["Cuantas raciones diarias entrega?"]} // Pasar cantidad de raciones aquí
+        />
+        
         {comedor["Prestacion alimentaria"] && (
           <h2>{comedor["Prestacion alimentaria"]}</h2>
         )}
-
+        
         {comedor["Frecuencia de funcionamiento"] && (
           <p><strong>Frecuencia:</strong> {comedor["Frecuencia de funcionamiento"]}</p>
         )}

@@ -1,3 +1,4 @@
+import React from "react";
 import { TbSunset2, TbSunMoon } from "react-icons/tb";
 import { IoBagHandle } from "react-icons/io5";
 import { BsMoonStarsFill } from "react-icons/bs";
@@ -6,7 +7,7 @@ import { MdSunny } from "react-icons/md";
 import styles from "./DaytimeSky.module.css";
 
 // eslint-disable-next-line react/prop-types
-const DaytimeSky = ({ prestacionAlimentaria }) => {
+const DaytimeSky = ({ prestacionAlimentaria, raciones }) => {
   let icon = null;
   let backgroundColor = "";
   let backgroundImage = "";
@@ -40,18 +41,18 @@ const DaytimeSky = ({ prestacionAlimentaria }) => {
       icon = <TbSunMoon className={styles.icon} style={{ color: "purple" }} />;
       backgroundImage = "linear-gradient(to right, #fff700, #3469eb)";
       break;
-      case "Desayuno, almuerzo y merienda":
-        icon = <TbSunMoon className={styles.icon} style={{ color: "yellowgreen" }} />;
-        backgroundImage = "linear-gradient(to right, purple, yellowgreen)";
-        break;
+    case "Desayuno, almuerzo y merienda":
+      icon = <TbSunMoon className={styles.icon} style={{ color: "yellowgreen" }} />;
+      backgroundImage = "linear-gradient(to right, purple, yellowgreen)";
+      break;
     case "Desayuno y cena":
       icon = <TbSunMoon className={styles.icon} style={{ color: "pink" }} />;
       backgroundImage = "linear-gradient(to right, purple, blue)";
       break;
-      case "Almuerzo y cena":
-        icon = <TbSunMoon className={styles.icon} style={{ color: "blue" }} />;
-        backgroundImage = "linear-gradient(to right, #fff700, #afeb00)";
-        break;
+    case "Almuerzo y cena":
+      icon = <TbSunMoon className={styles.icon} style={{ color: "blue" }} />;
+      backgroundImage = "linear-gradient(to right, #fff700, #afeb00)";
+      break;
     case "Cena y Merienda":
       icon = <TbSunMoon className={styles.icon} style={{ color: "violet" }} />;
       backgroundImage = "linear-gradient(to right, #afeb00, #ff8ce9)";
@@ -66,15 +67,18 @@ const DaytimeSky = ({ prestacionAlimentaria }) => {
   }
 
   return (
-    <div
-      className={styles.container}
-      style={{
-        backgroundColor: backgroundColor,
-        backgroundImage: backgroundImage ? backgroundImage : "none",
-      }}
-    >
-      {icon}
-    </div>
+    <section className={styles.dataIcons}>
+      <div
+        className={styles.container}
+        style={{
+          backgroundColor: backgroundColor,
+          backgroundImage: backgroundImage ? backgroundImage : "none",
+        }}
+      >
+        {icon} {/* Always show the icon */}
+      </div>
+      {raciones && <div className={styles.raciones}>{raciones}</div>} {/* Show raciones only if it has a value */}
+    </section>
   );
 };
 

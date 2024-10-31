@@ -16,6 +16,7 @@ import {
 import {
   CabaSource,
   BarriosCabaSource,
+  InversoCabaSource,
 } from "../Sources";
 
 function Mapa() {
@@ -57,6 +58,7 @@ function Mapa() {
         <NavigationControl position="top-left" />
         <CabaSource data={caba} />
         <BarriosCabaSource data={barriosCaba} />
+        <InversoCabaSource data={caba}/>
         <Markers comedores={comedores} onSelect={handleSelectComedor} />
         {selectedComedor && <Screen comedor={selectedComedor} />}
       

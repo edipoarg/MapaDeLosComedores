@@ -7,6 +7,17 @@ import comedores from "../data/comedores.json";
 import Markers from "../markers/Markers";
 import Screen from "../screen/Screen";
 
+// GEOJSON IMPORTS
+import {
+  caba,
+  barriosCaba
+} from "./geojson-data/index";
+
+import {
+  CabaSource,
+  BarriosCabaSource,
+} from "../Sources";
+
 function Mapa() {
   const mapProps = {
     initialViewState: {
@@ -44,8 +55,14 @@ function Mapa() {
         }}
       >
         <NavigationControl position="top-left" />
+        <CabaSource data={caba} />
+        <BarriosCabaSource data={barriosCaba} />
         <Markers comedores={comedores} onSelect={handleSelectComedor} />
         {selectedComedor && <Screen comedor={selectedComedor} />}
+      
+
+        
+
       </MapGL>
     </div>
   );

@@ -10,15 +10,15 @@ function Screen({ comedor }) {
   const getTitleColor = (tipoEspacio) => {
     switch (tipoEspacio) {
       case "Comedor":
-        return "#69a7f5";
+        return "#ebebeb";
       case "Merendero":
-        return "#9366eb";
+        return "#ebebeb";
       case "Olla popular":
-        return "#39b00c";
+        return "#ebebeb";
       case "Parroquia":
-        return "#f77b63";
+        return "#ebebeb";
       default:
-        return "#f27025";
+        return "#ebebeb";
     }
   };
 
@@ -31,7 +31,7 @@ function Screen({ comedor }) {
       case "Olla popular":
         return "#afeb00";
       case "Parroquia":
-        return "#eeff00";
+        return "#a730ed";
       default:
         return "#eeff00"; 
     }

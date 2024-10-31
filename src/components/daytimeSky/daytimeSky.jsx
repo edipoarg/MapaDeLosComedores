@@ -1,72 +1,76 @@
-// Daytime.jsx
 import { TbSunset2, TbSunMoon } from "react-icons/tb";
 import { IoBagHandle } from "react-icons/io5";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { IoPartlySunny } from "react-icons/io5";
 import { MdSunny } from "react-icons/md";
+import styles from "./DaytimeSky.module.css";
 
-
+// eslint-disable-next-line react/prop-types
 const DaytimeSky = ({ prestacionAlimentaria }) => {
   let icon = null;
   let backgroundColor = "";
+  let backgroundImage = "";
 
   switch (prestacionAlimentaria) {
     case "Almuerzo":
-      icon = <MdSunny style={{ color: "yellow", fontSize: "14vh", filter: "drop-shadow(0 0 10px yellow)" }} />;
-      backgroundColor = "#3469eb"; // Celeste
+      icon = <MdSunny className={styles.icon} style={{ color: "yellow" }} />;
+      backgroundColor = "lightblue";
       break;
     case "Desayuno":
-      icon = <TbSunset2 style={{ color: "orange", fontSize: "14vh", filter: "drop-shadow(0 0 10px orange)" }} />;
-      backgroundColor = "#fff700"; // Amarillo
+      icon = <TbSunset2 className={styles.icon} style={{ color: "orange" }} />;
+      backgroundColor = "#fff700";
       break;
     case "Merienda":
-      icon = <IoPartlySunny style={{ color: "pink", fontSize: "14vh", filter: "drop-shadow(0 0 10px pink)" }} />;
-      backgroundColor = "#ff8ce9"; // Naranja
+      icon = <IoPartlySunny className={styles.icon} style={{ color: "purple" }} />;
+      backgroundColor = "#ff8ce9";
       break;
     case "Cena":
-      icon = <BsMoonStarsFill style={{ color: "violet", fontSize: "14vh", filter: "drop-shadow(0 0 10px violet)" }} />;
-      backgroundColor = "#afeb00"; // Violeta oscuro
+      icon = <BsMoonStarsFill className={styles.icon} style={{ color: "violet" }} />;
+      backgroundColor = "darkblue";
       break;
     case "Viandas":
-      icon = <IoBagHandle style={{ color: "#4dd5d9", fontSize: "14vh", filter: "drop-shadow(0 0 10px #4dd5d9)" }} />;
-      backgroundColor = "#a0e1e1"; // Verde agua
+      icon = <IoBagHandle className={styles.icon} style={{ color: "#4dd5d9" }} />;
+      backgroundColor = "violet";
       break;
-    case "Almuerzo y Merienda":
-      icon = <TbSunMoon style={{ color: "green", fontSize: "14vh", filter: "drop-shadow(0 0 10px yellow)" }} />;
-      backgroundColor = "linear-gradient(to right, #3469eb, #ff8ce9)"; // Degradado
+    case "Almuerzo y merienda":
+      icon = <TbSunMoon className={styles.icon} style={{ color: "yellow" }} />;
+      backgroundColor = "yellowgreen";
       break;
-    case "Desayuno y Almuerzo":
-      icon = <TbSunMoon style={{ color: "pink", fontSize: "14vh", filter: "drop-shadow(0 0 10px pink)" }} />;
-      backgroundColor = "linear-gradient(to right, #fff700, #3469eb)"; // Degradado
+    case "Desayuno y almuerzo":
+      icon = <TbSunMoon className={styles.icon} style={{ color: "purple" }} />;
+      backgroundImage = "linear-gradient(to right, #fff700, #3469eb)";
       break;
-    case "Desayuno y Cena":
-      icon = <TbSunMoon  style={{ color: "blue", fontSize: "14vh", filter: "drop-shadow(0 0 10px blue)" }} />;
-      backgroundColor = "linear-gradient(to right, #fff700, #afeb00)"; // Degradado
+      case "Desayuno, almuerzo y merienda":
+        icon = <TbSunMoon className={styles.icon} style={{ color: "yellowgreen" }} />;
+        backgroundImage = "linear-gradient(to right, purple, yellowgreen)";
+        break;
+    case "Desayuno y cena":
+      icon = <TbSunMoon className={styles.icon} style={{ color: "pink" }} />;
+      backgroundImage = "linear-gradient(to right, purple, blue)";
       break;
+      case "Almuerzo y cena":
+        icon = <TbSunMoon className={styles.icon} style={{ color: "blue" }} />;
+        backgroundImage = "linear-gradient(to right, #fff700, #afeb00)";
+        break;
     case "Cena y Merienda":
-      icon = <TbSunMoon  style={{ color: "violet", fontSize: "14vh", filter: "drop-shadow(0 0 10px violet)" }} />;
-      backgroundColor = "linear-gradient(to right, #afeb00, #ff8ce9)"; // Degradado
+      icon = <TbSunMoon className={styles.icon} style={{ color: "violet" }} />;
+      backgroundImage = "linear-gradient(to right, #afeb00, #ff8ce9)";
       break;
     case "Almuerzo, Merienda, Desayuno y Cena":
-      icon = <TbSunMoon style={{ color: "orange", fontSize: "14vh", filter: "drop-shadow(0 0 10px orange)" }} />;
-      backgroundColor = "linear-gradient(to right, #3469eb, #ffed00, #ff8ce9, #afeb00)"; // Degradado
+      icon = <TbSunMoon className={styles.icon} style={{ color: "orange" }} />;
+      backgroundImage = "linear-gradient(to right, #3469eb, #ffed00, #ff8ce9, #afeb00)";
       break;
     default:
-      icon = <TbSunMoon  style={{ color: "yellow", fontSize: "14vh", filter: "drop-shadow(0 0 10px yellow)" }} />;
-      backgroundColor = "#eeff00"; // Valor por defecto
+      icon = <TbSunMoon className={styles.icon} style={{ color: "white" }} />;
+      backgroundColor = "grey";
   }
 
   return (
     <div
+      className={styles.container}
       style={{
-        borderRadius: "50%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "left",
-        color: "black",
-        marginTop: "-8vh",
-        opacity: 0.8, // Translucido
-        padding: "10px", // Espaciado para dar efecto de sombra interna
+        backgroundColor: backgroundColor,
+        backgroundImage: backgroundImage ? backgroundImage : "none",
       }}
     >
       {icon}

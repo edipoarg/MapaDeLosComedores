@@ -13,6 +13,7 @@
   color: #333;
   z-index: 10;
   display: flex;
+  box-shadow: 1px -2px 30px 0.5px rgba(0, 0, 0, 0.4);
 }
 
 .dataSection, .timeSection {
@@ -36,19 +37,16 @@
   max-width: 30vw;
   background-color: #9366eb;
   padding: 10px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
   padding: 1vh 5vw;
   min-height: 30vh;
   height: fit-content;
-  border: 2px solid #000;
   border-left: none;
 
 }
 .timeSection h2 {
   font-family: 'Odibee Sans', sans-serif;
-  color: #ebebeb;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 2rem;
   
 }
 
@@ -75,7 +73,7 @@
 }
 
 .titleBox p, .timeSection p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -119,4 +117,53 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #f27025;
+}
+
+@media (min-width: 768px) {
+  .screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    width: 25vw;
+    height: 100vh;
+  }
+
+  .dataSection {
+    max-width: 30vw;
+    border-radius: 10px;
+    color: #000; /* Ajusta el color del texto si es necesario */
+      padding: 2vh 3vw;
+  
+  }
+  
+  
+  .timeSection {
+    min-width: 10vw;
+    width: 10vw;
+    max-width: 10vw;
+    background-color: #9366eb;
+    padding: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 1vh 4vw;
+    margin-top: 10vh;
+    min-height: 30vh;
+    height: fit-content;
+    border-left: none;
+  
+  }
+
+  .titleBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: rgb(248, 244, 228);
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 1vw 1vw 0 #000;
+    min-width: 13vw;
+    padding: 1vh 3vw;
+    height: fit-content;
+  }
 }

@@ -1,0 +1,44 @@
+/* DaytimeSky.module.css */
+.container {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-top: -8vh;
+  opacity: 0.8;
+  padding: 10px;
+  border: solid 4px white;
+  width: 10vw;
+  height: 10vw;
+  background-color: #ebebeb;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  font-size: 8vh;
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+@media (min-width: 768px) {
+  .container {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: -8vh;
+    opacity: 0.8;
+    padding: 10px;
+    border: solid 4px white;
+    width: 5vw;
+    height: 5vw;
+    background-color: #ebebeb;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .icon {
+    font-size: 8vh;
+  }
+
+}

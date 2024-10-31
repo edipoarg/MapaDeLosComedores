@@ -10,29 +10,29 @@ const Daytime = ({ prestacionAlimentaria, size }) => {
 
   switch (prestacionAlimentaria) {
     case "Comedor":
-      icon = <GiKnifeFork style={{ color: "#69a7f5", fontSize: "15px" }} />;
-      backgroundColor = "#3469eb";
+      icon = <GiKnifeFork style={{ color: "white", fontSize: "13px" }} />;
+      backgroundColor = "#0dceea";
       break;
     case "Merendero":
-      icon = <PiBowlSteam style={{ color: "#9366eb", fontSize: "15px" }} />;
+      icon = <PiBowlSteam style={{ color: "#9366eb", fontSize: "13px" }} />;
       backgroundColor = "#ff8ce9";
       break;
     case "Olla popular":
-      icon = <PiCookingPot style={{ color: "#39b00c", fontSize: "15px" }} />;
+      icon = <PiCookingPot style={{ color: "#39b00c", fontSize: "13px" }} />;
       backgroundColor = "#afeb00";
       break;
     case "Parroquia":
-      icon = <MdOutlineChurch style={{ color: "#f77b63", fontSize: "15px" }} />;
-      backgroundColor = "#eeff00";
+      icon = <MdOutlineChurch style={{ color: "white", fontSize: "13px" }} />;
+      backgroundColor = "#a930ea";
       break;
     default:
-      icon = <GiKnifeFork style={{ color: "#f77b63", fontSize: "15px" }} />;
-      backgroundColor = "#eeff00";
+      icon = <GiKnifeFork style={{ color: "#f77b63", fontSize: "13px" }} />;
+      backgroundColor = "#e8bd00";
   }
 
   // Definir estilos según el tamaño
   if (size === "small") {
-    styles = { padding: "4px", fontSize: "8px", maxWidth: "3vw" };
+    styles = { padding: "3px", fontSize: "4px", maxWidth: "2vw" };
   } else if (size === "medium") {
     styles = { padding: "8px", fontSize: "18px", maxWidth: "6vw" };
   } else if (size === "large") {
@@ -48,7 +48,8 @@ const Daytime = ({ prestacionAlimentaria, size }) => {
         alignItems: "center",
         justifyContent: "center",
         color: "black",
-        border: "solid 1px black",
+        border: "solid 2px white",
+        boxShadow: "1px 2px 4px rgba(0, 0, 0, 0.5)",
         ...styles,
       }}
     >

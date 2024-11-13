@@ -3,16 +3,22 @@
     top: 0;
     left: 0;
     max-width: 100vw;
-    height: fit-content;
+    height: 10vh;
     width: 100vw;
     padding: 1vh 2vw;
     display: flex;
     gap: 1vh;
     z-index: 3000;
     background-color: #ebebeb;
-    justify-content: center;
+    justify-content: left;
     font-family: 'Odibee Sans';
     color: rgb(65, 65, 65);
+}
+
+.title{
+  display: flex;
+ gap: 3vw;
+ padding-left: 5vw;
 }
 
 .logo{
@@ -21,78 +27,16 @@
     font-size: 1.5rem;
 }
 
+.logoimg
+{height: 12vh;
+  width: 12vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://static.wixstatic.com/media/bd63ad_05184122ecea419dafa9bd970b7dd8e5~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20final.jpg");
+border-radius: 180px;}
 .us{
     font-size: 1rem;
     color: rgb(65, 65, 65);
 }
-.menuButton {
-    /* Style the label element as a button here */
-    display: inline-block;
-    margin-left:auto;
-    margin-right: auto;
-  }
-.menu a h3:hover{
-    background-color: #ebebeb !important;
-}
-  .home {
-   margin: auto;
-   background-color: #3469eb ;
-   color: rgb(65, 65, 65) ;
-  }
-  .nosotrxs {
-    margin: auto;
-    background-color: #ff8ce9;
-    color: rgb(65, 65, 65) ;
-  }
-  .lista{
-    margin: auto;
-    background-color: #afeb00;
-    color: rgb(65, 65, 65) ;
-  }
-  .checkbox {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    pointer-events: none;
-  }
-  
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 24px;
-  }
-  
-  .bar {
-    background-color: #333;
-    height: 2px;
-    width: 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .checkbox:checked + .hamburger > .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
-  }
-  
-  .checkbox:checked + .hamburger > .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .checkbox:checked + .hamburger > .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-  }
 
-    .menu {
-      width: 100%;
-      height: auto;
-      position: relative;
-      margin: auto;
-    }
-    .menu a {
-        text-align: center;
-        float: none;
-      }
-    .maplibregl-map {margin-left: 0;}
   

@@ -8,7 +8,8 @@
   background-color: #ebebeb; 
   padding: 20px;
   padding-left: 0;
-  border-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 60px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #333;
   z-index: 10;
@@ -35,7 +36,6 @@
   min-width: 30vw;
   width: 30vw;
   max-width: 30vw;
-  background-color: #9366eb;
   padding: 10px;
   padding: 1vh 5vw;
   min-height: 30vh;
@@ -129,6 +129,7 @@
     max-width: 25vw;
     width: 18vw;
     height: 45vh;
+    border-radius: 60px;
   }
 
   .dataSection {
@@ -144,7 +145,6 @@
     min-width: 10vw;
     width: 10vw;
     max-width: 10vw;
-    background-color: #9366eb;
     padding: 10px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;

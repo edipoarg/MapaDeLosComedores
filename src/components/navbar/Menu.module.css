@@ -1,0 +1,78 @@
+.menuBox{
+position: fixed;
+top: 0;
+right: 0;
+height: fit-content;
+width: fit-content;
+background-color: red;}
+
+.menuButton {
+    /* Style the label element as a button here */
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+.menu a h3:hover{
+    background-color: #ebebeb !important;
+}
+  .home {
+   margin: auto;
+   background-color: #3469eb ;
+   color: rgb(65, 65, 65) ;
+  }
+  .nosotrxs {
+    margin: auto;
+    background-color: #ff8ce9;
+    color: rgb(65, 65, 65) ;
+  }
+  .lista{
+    margin: auto;
+    background-color: #afeb00;
+    color: rgb(65, 65, 65) ;
+  }
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .bar {
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+    .menu {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: auto;
+    }
+    .menu a {
+        text-align: center;
+        float: none;
+      }
+    .maplibregl-map {margin-left: 0;}

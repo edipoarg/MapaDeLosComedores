@@ -40,7 +40,7 @@ function Screen({ comedor }) {
     <div className={styles.screen}>
       <div
         className={styles.timeSection}
-        style={{ backgroundColor: getTitleColor(tipoEspacio) }}
+        style={{ backgroundColor: "none" }}
       >
         <DaytimeSky 
           prestacionAlimentaria={comedor["Prestacion alimentaria"]} 

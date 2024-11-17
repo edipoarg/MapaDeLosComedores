@@ -25,6 +25,7 @@
     font-size: 1rem;
     color: rgb(65, 65, 65);
     font-size: 1.5rem;
+    padding-left: 8vw;
 }
 
 .logoimg
@@ -32,11 +33,18 @@
   width: 12vh;
   background-size: cover;
   background-position: center;
-  background-image: url("https://static.wixstatic.com/media/bd63ad_05184122ecea419dafa9bd970b7dd8e5~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20final.jpg");
+  background-image: url("../../../public/logoComedores.png");
 border-radius: 180px;}
 .us{
     font-size: 1rem;
     color: rgb(65, 65, 65);
 }
 
-  
+@media (min-width: 768px) {
+.logo{
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 2vh;
+  padding-left: 22vw;
+}
+}

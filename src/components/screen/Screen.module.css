@@ -27,10 +27,29 @@
   max-width: 55vw;
   border-radius: 10px;
   color: #000; /* Ajusta el color del texto si es necesario */
-    padding: 2vh 3vw;
+    padding: 2vh 0vw;
 
 }
 
+.name{
+font-size: 2rem;
+font-family:'Odibee Sans', sans-serif;
+}
+
+.whatsappButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 1vw;
+  height: 10vh;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1);
+}
 
 .timeSection {
   min-width: 30vw;
@@ -64,7 +83,7 @@
 }
 
 .titleBox h3 {
-  padding-top: 4vh;
+  padding-top: 2vh;
   font-size: 1.9rem;
   margin: 0;
   font-family: 'Odibee Sans', sans-serif;
@@ -73,14 +92,15 @@
 }
 
 .titleBox p, .timeSection p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .contactBox {
-  padding: 10px;
+  padding: 1vh 2vw ;
   font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
 }
 
 .contactBox p{margin: 0}
@@ -119,6 +139,63 @@
   color: #f27025;
 }
 
+.defaultText{
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0vh 10vw;
+  text-align: justify;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.defaultTitle{
+  padding: 3vh 10vw;
+  text-align: justify;
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Odibee Sans', sans-serif;
+  color: #333;
+  line-height: 1;
+}
+
+
+.colabora {
+  background: linear-gradient(to bottom, #0a0a0a, #004d00);
+  color: #ebebeb;
+  border-radius: 50px; /* Ajuste del borde redondeado */
+  margin-right: -5vw;
+  width: 15vw;
+  padding: 3vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; /* Ajustar según sea necesario */
+  font-weight: bold;
+  box-shadow: 
+    inset 2px 2px 5px rgba(0, 0, 0, 0.6), /* Sombra interna para el relieve */
+    4px 4px 8px rgba(0, 0, 0, 0.5), /* Sombra externa */
+    -2px -2px 4px rgba(255, 255, 255, 0.1); /* Efecto de luz superior */
+  border: 1px solid #004d00; /* Borde sutil */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.colabora:hover {
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 
+    inset 2px 2px 8px rgba(0, 0, 0, 0.6),
+    6px 6px 12px rgba(0, 0, 0, 0.7),
+    -2px -2px 6px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom, #0a0a0a, #55db17);}
+
+
+.colabora h4{
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
 @media (min-width: 768px) {
   .screen {
     position: relative;
@@ -128,44 +205,111 @@
     flex-direction: column;
     max-width: 25vw;
     width: 18vw;
-    height: 45vh;
+    height: fit-content;
     border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.0);
+    box-shadow: none;
   }
 
   .dataSection {
     max-width: 30vw;
-    border-radius: 10px;
-    color: #000; /* Ajusta el color del texto si es necesario */
-      padding: 2vh 3vw;
+    border-radius: 45px;
+    color: #333; /* Ajusta el color del texto si es necesario */
+      padding: 2vh 0vw;
   
   }
   
   
   .timeSection {
-    min-width: 10vw;
+    min-width: 15vw;
     width: 10vw;
     max-width: 10vw;
     padding: 10px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    padding: 1vh 4vw;
+    padding: 1vh 2vw;
     margin-top: 0vh;
     min-height: 30vh;
     height: fit-content;
     border-left: none;
-  
+    background-color: #ebebeb;
+    border-radius: 60px;
+    box-shadow: 1px -2px 30px 0.5px rgba(0, 0, 0, 0.4);
   }
 
   .titleBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 15px;
     background-color: rgb(248, 244, 228);
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 0.5vw 0.5vw 0 #000;
-    min-width: 13vw;
+    border: 5px solid #ebebeb;
+    border-radius: 200px;
+    box-shadow: 0.5vw 0.5vw 20px 1px rgba(0, 0, 0, 0.5);
+    min-width: 8vw;
     padding: 2vh 3vw;
     height: fit-content;
   }
+
+  .defaultText{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0vh 2vw;
+    text-align: justify;
+  }
+  
+  .defaultTitle{
+    padding: 3vh 2vw;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    line-height: 1;
+  }
+
+  .contactBox{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.4);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+padding: 4vh 1vw;
+  }
+
+  .colabora {
+    background: linear-gradient(to bottom, #0a0a0a, #004d00);
+    color: #ebebeb;
+    border-radius: 50px; /* Ajuste del borde redondeado */
+    margin-right: -5vw;
+    width: 15vw;
+    padding: 3vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Ajustar según sea necesario */
+    font-weight: bold;
+    box-shadow: 
+      inset 2px 2px 5px rgba(0, 0, 0, 0.6), /* Sombra interna para el relieve */
+      4px 4px 8px rgba(0, 0, 0, 0.5), /* Sombra externa */
+      -2px -2px 4px rgba(255, 255, 255, 0.1); /* Efecto de luz superior */
+    border: 1px solid #004d00; /* Borde sutil */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .colabora:hover {
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 
+      inset 2px 2px 8px rgba(0, 0, 0, 0.6),
+      6px 6px 12px rgba(0, 0, 0, 0.7),
+      -2px -2px 6px rgba(255, 255, 255, 0.2);
+      background: linear-gradient(to bottom, #0a0a0a, #55db17);}
+  
+
+  .colabora h4{
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+
 }

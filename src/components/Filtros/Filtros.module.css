@@ -1,0 +1,43 @@
+.filtrosContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 12vw;
+    max-width: 12vw;
+    right: 0;
+    top: 15vh;
+  }
+  .filtrosTitle{
+    text-align: right;
+  }
+  .filtroItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 45px;
+    font-weight: bold;
+    border: #ebebeb solid 5px;
+justify-content: center; 
+box-shadow: 0.5vw 0.5vw 20px 1px rgba(0, 0, 0, 0.5);
+}
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  
+  .texto {
+    font-size: 0rem;
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+     
+  .texto {
+    font-size: 1rem;
+    color: #333;
+
+  }
+  }

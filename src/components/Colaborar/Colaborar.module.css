@@ -1,5 +1,5 @@
 .container {
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -49,5 +49,112 @@
     justify-content: center;
     font-size: 4rem;
     color: #888;
+  }
+  
+  /* Contenedor de iconos */
+  .circleContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Animación de los íconos agrandándose de a uno */
+  .icon {
+    position: absolute;
+    font-size: 3rem;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
+    animation: zoom 8s infinite;
+  }
+  
+  /* Posicionamiento de los íconos */
+  .icon:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s; /* Primero */
+  }
+  
+  .icon:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation-delay: 2s; /* Segundo */
+  }
+  
+  .icon:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 4s; /* Tercero */
+  }
+  
+  .icon:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation-delay: 6s; /* Cuarto */
+  }
+  
+  /* Efecto de agrandar (zoom) */
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    25% {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    75% {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Animación del mouse recorriendo los íconos */
+  @keyframes mouseMove {
+    0% {
+      top: 50%;
+      left: 50%;
+    }
+    25% {
+      top: 20%;
+      left: 50%;
+    }
+    50% {
+      top: 50%;
+      left: 80%;
+    }
+    75% {
+      top: 80%;
+      left: 50%;
+    }
+    100% {
+      top: 50%;
+      left: 20%;
+    }
+  }
+  
+  /* Estilo del mouse */
+  .mouse {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: mouseMove 4s infinite ease-in-out;
+    pointer-events: none; /* Evitar que interfiera con otros elementos */
   }
   

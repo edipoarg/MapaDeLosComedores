@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from './Us.module.css';
-import comedoresFoto from "../data/comedores.jpg";
+import styles from './QuienesSomos.module.css';
 
 // Array of background images
 const backgroundImages = [
@@ -16,7 +15,7 @@ const backgroundImages = [
   "https://static.wixstatic.com/media/bd63ad_f1760a7786f847babf89dc5be4892f0e~mv2.jpg/v1/fill/w_750,h_473,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/_DSC9672.jpg"
 ];
 
-function Us() {
+function QuienesSomos() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -47,4 +46,4 @@ function Us() {
   );
 }
 
-export default Us;
+export default QuienesSomos;

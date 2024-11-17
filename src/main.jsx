@@ -8,8 +8,9 @@ import {
 import "./index.css";
 import App from "./App";
 import List from "./List/List.jsx";
-import Us from './components/us/Us.jsx';
-
+import QuienesSomos from './components/QuienesSomos/QuienesSomos.jsx';
+import Informes from './components/Informes/Informes.jsx';
+import Colaborar from './components/Colaborar/Colaborar.jsx';
 
 const router = createHashRouter([
   {
@@ -18,7 +19,11 @@ const router = createHashRouter([
     children: [
       { path: "/", element: <App /> },
       { path: "/listado", element: <List /> },
-      { path: "/us", element: <Us /> },
+      { path: "/colaborar", element: <Colaborar /> },
+      { path: "/informes", element: <Informes /> },
+      { path: "/quienes-somos", element: <QuienesSomos /> },
+
+
 
     ]
   },

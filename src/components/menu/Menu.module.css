@@ -1,10 +1,11 @@
 .menuBox{
-position: fixed;
-top: 0;
-right: 0;
-height: fit-content;
-width: fit-content;
-background-color: red;}
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 3vh;
+  right: 5vw;
+  z-index: 5000;
+}
 
 .menuButton {
     /* Style the label element as a button here */
@@ -16,19 +17,53 @@ background-color: red;}
     background-color: #ebebeb !important;
 }
   .home {
+    border-radius: 45px;
+
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+    width: 50vw;
+    height: 5vh;
    margin: auto;
    background-color: #3469eb ;
    color: rgb(65, 65, 65) ;
   }
   .nosotrxs {
+    border-radius: 45px;
+
+    border-radius: 45px;
+    position: fixed;
+    top: 36vh;
+    left: 25vw;
+    width: 50vw;
+    height: 5vh;
     margin: auto;
     background-color: #ff8ce9;
     color: rgb(65, 65, 65) ;
   }
   .lista{
+    border-radius: 45px;
+
     margin: auto;
     background-color: #afeb00;
     color: rgb(65, 65, 65) ;
+    position: fixed;
+    top: 29vh;
+    left: 25vw;
+    width: 50vw;
+    height: 5vh;
+  }
+  .colaborar{
+    border-radius: 45px;
+
+    margin: auto;
+    background-color: #a014d3;
+    color: rgb(65, 65, 65) ;
+    position: fixed;
+    top: 22vh;
+    left: 25vw;
+    width: 50vw;
+    height: 5vh;
   }
   .checkbox {
     position: absolute;
@@ -39,6 +74,13 @@ background-color: red;}
   }
   
   .hamburger {
+     position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 3vh;
+  right: 5vw;
+  z-index: 5000;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

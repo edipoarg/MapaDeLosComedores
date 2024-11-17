@@ -1,4 +1,3 @@
-import React from "react";
 import { TbSunset2, TbSunMoon } from "react-icons/tb";
 import { IoBagHandle } from "react-icons/io5";
 import { BsMoonStarsFill } from "react-icons/bs";

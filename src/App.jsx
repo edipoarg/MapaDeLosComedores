@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Mapa from './components/mapa/Mapa';
 import Footer from './components/footer/Footer';
-import Menu from './components/navbar/Menu';
+import Menu from './components/menu/Menu';
 
 function App() {
 

@@ -4,7 +4,18 @@ import DaytimeSky from '../daytimeSky/daytimeSky';
 
 function Screen({ comedor }) {
   if (!comedor) {
-    return null;
+    // Renderizar mensaje predeterminado cuando no hay comedor seleccionado
+    return (
+      <div className={styles.screen}>
+        <div className={styles.defaultMessage}>
+          <h2>¡Bienvenido/a al Mapa de los Comedores!</h2>
+          <p>
+            Navegá en el mapa para conocer comedores, merenderos y ollas populares de toda la Ciudad de Buenos Aires y acercar tu solidaridad. 
+            Cliqueá y accedé a toda la información.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   const getTitleColor = (tipoEspacio) => {
@@ -34,7 +45,7 @@ function Screen({ comedor }) {
     }
   };
 
-  const tipoEspacio = comedor["Tipo de espacio"]; 
+  const tipoEspacio = comedor["Tipo de espacio"];
 
   return (
     <div className={styles.screen}>
@@ -44,7 +55,7 @@ function Screen({ comedor }) {
       >
         <DaytimeSky 
           prestacionAlimentaria={comedor["Prestacion alimentaria"]} 
-          raciones={comedor["Cuantas raciones diarias entrega?"]} // Pasar cantidad de raciones aquí
+          raciones={comedor["Cuantas raciones diarias entrega?"]}
         />
         
         {comedor["Prestacion alimentaria"] && (

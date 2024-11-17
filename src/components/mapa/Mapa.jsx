@@ -60,7 +60,7 @@ function Mapa() {
         <BarriosCabaSource data={barriosCaba} />
         <InversoCabaSource data={caba}/>
         <Markers comedores={comedores} onSelect={handleSelectComedor} />
-        {selectedComedor && <Screen comedor={selectedComedor} />}
+        <Screen comedor={selectedComedor} />
       
 
         

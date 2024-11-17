@@ -14,56 +14,51 @@
     margin-right: auto;
   }
 .menu a h3:hover{
-    background-color: #ebebeb !important;
+    background-color: #232121 !important;
+}
+.colaborar, .nosotrxs, .lista, .home{
+  font-family: 'Odibee Sans';
+  border-radius: 45px;
+  padding-top: 2vh;
+  width: 70vw;
+  height: 10vh;
+ margin: auto;
+ text-align: left;
+ padding-left: 5vw;
+
 }
   .home {
-    border-radius: 45px;
-
-    position: fixed;
-    top: 15vh;
-    left: 25vw;
-    width: 50vw;
-    height: 5vh;
-   margin: auto;
-   background-color: #3469eb ;
-   color: rgb(65, 65, 65) ;
+   
+   background-color: #5985fd ;
+   color: rgb(186, 225, 123) ;
+  
   }
   .nosotrxs {
-    border-radius: 45px;
-
-    border-radius: 45px;
-    position: fixed;
-    top: 36vh;
-    left: 25vw;
-    width: 50vw;
-    height: 5vh;
-    margin: auto;
-    background-color: #ff8ce9;
-    color: rgb(65, 65, 65) ;
+   
+    background-color: #c482e7;
+    color: rgb(104, 72, 207) ;
+ 
   }
   .lista{
-    border-radius: 45px;
+    background-color: #e49635;
+    color: rgb(186, 243, 117) ;
 
-    margin: auto;
-    background-color: #afeb00;
-    color: rgb(65, 65, 65) ;
-    position: fixed;
-    top: 29vh;
-    left: 25vw;
-    width: 50vw;
-    height: 5vh;
   }
   .colaborar{
-    border-radius: 45px;
 
-    margin: auto;
-    background-color: #a014d3;
-    color: rgb(65, 65, 65) ;
-    position: fixed;
-    top: 22vh;
-    left: 25vw;
-    width: 50vw;
-    height: 5vh;
+    background-color: #dcef6c;
+    color: rgb(176, 112, 218) ;
+  }
+
+  .menuBackground{
+background-color: rgba(49, 49, 49, 0.902);
+position: fixed;
+width: 100vw;
+height: 89vh;
+top: 12vh;
+left: 0;
+font-size: 2rem;
+padding-top: 10vh;
   }
   .checkbox {
     position: absolute;
@@ -86,6 +81,7 @@
     justify-content: space-between;
     height: 24px;
     width: 24px;
+    
   }
   
   .bar {
@@ -93,6 +89,7 @@
     height: 2px;
     width: 100%;
     transition: transform 0.4s ease-in-out;
+  
   }
   
   .checkbox:checked + .hamburger > .bar:nth-child(1) {
@@ -112,9 +109,29 @@
       height: auto;
       position: relative;
       margin: auto;
+      
     }
     .menu a {
         text-align: center;
         float: none;
       }
     .maplibregl-map {margin-left: 0;}
+
+    @media (min-width: 768px) {
+    
+      .menuBackground{
+        background-color: rgba(49, 49, 49, 0.902);
+        position: fixed;
+        width: 100vw;
+        height: 89vh;
+        top: 12vh;
+        left: 0;
+        font-size: 2rem;
+        padding-top: 5vh;
+        padding-left: 25vw;
+          }
+
+          .colaborar, .nosotrxs, .lista, .home{
+            width: 30vw;
+          }
+    }

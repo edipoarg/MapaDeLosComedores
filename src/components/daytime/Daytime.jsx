@@ -1,4 +1,3 @@
-import React from "react";
 import { GiKnifeFork } from "react-icons/gi";
 import { PiCookingPot, PiBowlSteam } from "react-icons/pi";
 import { MdOutlineChurch } from "react-icons/md";
@@ -26,8 +25,8 @@ const Daytime = ({ prestacionAlimentaria, size }) => {
       backgroundColor = "#a930ea";
       break;
     default:
-      icon = <GiKnifeFork style={{ color: "#f77b63", fontSize: "13px" }} />;
-      backgroundColor = "#e8bd00";
+      icon = <GiKnifeFork style={{ color: "white", fontSize: "13px" }} />;
+      backgroundColor = "#0dceea";
   }
 
   // Definir estilos según el tamaño

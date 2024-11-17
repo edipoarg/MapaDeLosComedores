@@ -1,15 +1,15 @@
 /* eslint-disable react/prop-types */
+import { IoLogoWhatsapp } from "react-icons/io5";
 import styles from './Screen.module.css';
 import DaytimeSky from '../daytimeSky/daytimeSky';
 
 function Screen({ comedor }) {
   if (!comedor) {
-    // Renderizar mensaje predeterminado cuando no hay comedor seleccionado
     return (
       <div className={styles.screen}>
         <div className={styles.defaultMessage}>
-          <h2>¡Bienvenido/a al Mapa de los Comedores!</h2>
-          <p>
+          <h2 className={styles.defaultTitle}>¡Bienvenido/a al Mapa de los Comedores!</h2>
+          <p className={styles.defaultText}>
             Navegá en el mapa para conocer comedores, merenderos y ollas populares de toda la Ciudad de Buenos Aires y acercar tu solidaridad. 
             Cliqueá y accedé a toda la información.
           </p>
@@ -24,9 +24,9 @@ function Screen({ comedor }) {
       case "Merendero":
       case "Olla popular":
       case "Parroquia":
-        return "#ebebeb";
+        return "#333";
       default:
-        return "#ebebeb";
+        return "#333";
     }
   };
 
@@ -39,13 +39,16 @@ function Screen({ comedor }) {
       case "Olla popular":
         return "#afeb00";
       case "Parroquia":
-        return "#a730ed";
+        return "#bc71e7";
       default:
-        return "#eeff00"; 
+        return "#0dceea"; 
     }
   };
 
   const tipoEspacio = comedor["Tipo de espacio"];
+  const whatsappNumber = typeof comedor["Contacto del/la responsable"] === 'string'
+    ? comedor["Contacto del/la responsable"].replace(/\s+/g, '')
+    : null;
 
   return (
     <div className={styles.screen}>
@@ -76,11 +79,33 @@ function Screen({ comedor }) {
       <div className={styles.dataSection}>
         <div
           className={styles.titleBox}
-          style={{ background: getBackgroundColor(tipoEspacio) }} 
+          style={{ background: getBackgroundColor(tipoEspacio) }}
         >
-          <h3 style={{ color: getTitleColor(tipoEspacio) }}>
+          <h3
+            className={styles.name}
+            style={{ color: getTitleColor(tipoEspacio) }}
+          >
             {comedor["Espacio (nombre)"] || ""}
           </h3>
+       
+          {whatsappNumber && (
+           
+            <a
+              href={`https://wa.me/54${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappButton}
+            >
+                  <section className={styles.colabora}>
+                  <h4 >COLABORÁ</h4>
+                  <IoLogoWhatsapp />
+
+                  </section>
+
+            </a>
+          )}
+        </div>
+        <div className={styles.contactBox}>
           {comedor["Organización a la que pertenece"] && (
             <p>Organización: <strong>{comedor["Organización a la que pertenece"]}</strong></p>
           )}
@@ -91,8 +116,6 @@ function Screen({ comedor }) {
               )}
             </p>
           )}
-        </div>
-        <div className={styles.contactBox}>
           {comedor["Responsable"] && (
             <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
           )}

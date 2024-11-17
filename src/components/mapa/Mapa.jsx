@@ -6,6 +6,7 @@ import styles from './Mapa.module.css';
 import comedores from "../data/comedores.json";
 import Markers from "../markers/Markers";
 import Screen from "../screen/Screen";
+import Filtros from "../Filtros/Filtros";
 
 // GEOJSON IMPORTS
 import {
@@ -39,10 +40,20 @@ function Mapa() {
   };
 
   const [selectedComedor, setSelectedComedor] = useState(null);
+  const [filter, setFilter] = useState(null); // Estado para el filtro activo
 
   const handleSelectComedor = (comedor) => {
     setSelectedComedor(comedor);
   };
+  const handleFilterChange = (tipo) => {
+    setFilter((prevFilter) => (prevFilter === tipo ? null : tipo)); // Alternar entre seleccionar y deseleccionar
+  };
+
+
+  // Filtrar comedores según el filtro activo
+  const filteredComedores = filter
+    ? comedores.filter((comedor) => comedor["Tipo de espacio"] === filter)
+    : comedores;
 
   return (
     <div className={styles.mapa}>
@@ -59,10 +70,9 @@ function Mapa() {
         <CabaSource data={caba} />
         <BarriosCabaSource data={barriosCaba} />
         <InversoCabaSource data={caba}/>
-        <Markers comedores={comedores} onSelect={handleSelectComedor} />
+        <Markers comedores={filteredComedores} onSelect={handleSelectComedor} />
         <Screen comedor={selectedComedor} />
-      
-
+      <Filtros selectedFilter={filter} onFilterChange={handleFilterChange}/>
         
 
       </MapGL>

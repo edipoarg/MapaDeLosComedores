@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Marker } from "react-map-gl/maplibre";
 import Daytime from "../daytime/Daytime";
 
 function Markers({ comedores, onSelect }) {
+  const [selectedMarker, setSelectedMarker] = useState(null);
+
   return (
     <>
       {comedores.map((comedor, index) => {
@@ -23,14 +25,23 @@ function Markers({ comedores, onSelect }) {
           size = "large"; // Tamaño grande
         }
 
+        const isSelected = selectedMarker === index;
+
         return (
           <Marker
             key={index}
             longitude={longitude}
             latitude={latitude}
-            onClick={() => onSelect(comedor)}
+            onClick={() => {
+              setSelectedMarker(index); // Cambia el marcador seleccionado
+              onSelect(comedor);
+            }}
           >
-            <Daytime prestacionAlimentaria={comedor["Tipo de espacio"]} size={size} />
+            <Daytime
+              prestacionAlimentaria={comedor["Tipo de espacio"]}
+              size={size}
+              isSelected={isSelected} // Pasar información de selección
+            />
           </Marker>
         );
       })}

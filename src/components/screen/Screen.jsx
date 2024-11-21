@@ -46,8 +46,21 @@ function Screen({ comedor }) {
   };
 
   const tipoEspacio = comedor["Tipo de espacio"];
-  const whatsappNumber = typeof comedor["Contacto del/la responsable"] === 'string'
-    ? comedor["Contacto del/la responsable"].replace(/\s+/g, '')
+  const rawWhatsappNumber = comedor["Contacto del/la responsable"];
+
+  // Validación del número de WhatsApp
+  const isValidWhatsAppNumber = (number) => {
+    if (number == null) return false;
+
+    const cleanNumber = number
+      .toString() // Convierte el número a cadena si es necesario
+      .replace(/[^0-9]/g, ''); // Elimina caracteres no numéricos
+
+    return cleanNumber.length === 10; // Acepta exactamente 10 dígitos
+  };
+
+  const cleanWhatsAppNumber = rawWhatsappNumber
+    ? rawWhatsappNumber.toString().replace(/[^0-9]/g, '') // Limpia y convierte a cadena
     : null;
 
   return (
@@ -87,47 +100,39 @@ function Screen({ comedor }) {
           >
             {comedor["Espacio (nombre)"] || ""}
           </h3>
-       
         </div>
         <div className={styles.contactBox}>
-      
           <div className={styles.contactInfo}>
-          {comedor["Organización a la que pertenece"] && (
-            <p>Organización: <strong>{comedor["Organización a la que pertenece"]}</strong></p>
-          )}
-          {comedor["Dirección exacta"] && (
-            <p>
-              <strong>Dirección:</strong> {comedor["Dirección exacta"]}, {comedor["Barrio"] && (
-                <strong>{comedor["Barrio"]}</strong>
-              )}
-            </p>
-          )}
-          {comedor["Responsable"] && (
-            <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
-          )}
-          {comedor["Contacto del/la responsable"] && (
-            <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
-          )}
-
-
+            {comedor["Organización a la que pertenece"] && (
+              <p>Organización: <strong>{comedor["Organización a la que pertenece"]}</strong></p>
+            )}
+            {comedor["Dirección exacta"] && (
+              <p>
+                <strong>Dirección:</strong> {comedor["Dirección exacta"]}, {comedor["Barrio"] && (
+                  <strong>{comedor["Barrio"]}</strong>
+                )}
+              </p>
+            )}
+            {comedor["Responsable"] && (
+              <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
+            )}
+            {comedor["Contacto del/la responsable"] && (
+              <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
+            )}
           </div>
-          {whatsappNumber && (
-           
-           <a
-             href={`https://wa.me/54${whatsappNumber}`}
-             target="_blank"
-             rel="noopener noreferrer"
-             className={styles.whatsappButton}
-           >
-                 <section className={styles.colabora}>
-                 <h4 >COLABORÁ</h4>
-                 <IoLogoWhatsapp />
-
-                 </section>
-
-           </a>
-         )}
-         
+          {cleanWhatsAppNumber && isValidWhatsAppNumber(cleanWhatsAppNumber) && (
+            <a
+              href={`https://wa.me/54${cleanWhatsAppNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappButton}
+            >
+              <section className={styles.colabora}>
+                <h4>COLABORÁ</h4>
+                <IoLogoWhatsapp />
+              </section>
+            </a>
+          )}
         </div>
       </div>
     </div>

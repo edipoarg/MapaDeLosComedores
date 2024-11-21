@@ -66,7 +66,7 @@ function Mapa() {
           // Opciones de mapa adicionales si es necesario
         }}
       >
-        <NavigationControl position="top-left" />
+        <NavigationControl position="bottom-right" />
         <CabaSource data={caba} />
         <BarriosCabaSource data={barriosCaba} />
         <InversoCabaSource data={caba}/>

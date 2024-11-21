@@ -71,7 +71,7 @@ font-family:'Odibee Sans', sans-serif;
 
 .titleBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 15px;
   background-color: rgb(248, 244, 228);
   border: 2px solid #000;
@@ -89,6 +89,9 @@ font-family:'Odibee Sans', sans-serif;
   font-family: 'Odibee Sans', sans-serif;
   color: #f27025;
   line-height: 1;
+}
+
+.name{padding-right: 5vw;
 }
 
 .titleBox p, .timeSection p {
@@ -138,6 +141,7 @@ font-family:'Odibee Sans', sans-serif;
   font-weight: bold;
   color: #f27025;
 }
+
 
 .defaultText{
   font-size: 1.2rem;
@@ -219,7 +223,14 @@ font-family:'Odibee Sans', sans-serif;
   
   }
   
-  
+  .defaultMessage{
+    background-color: #fff; 
+    padding: 20px;
+    padding-left: 0;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
   .timeSection {
     min-width: 15vw;
     width: 10vw;

@@ -88,24 +88,10 @@ function Screen({ comedor }) {
             {comedor["Espacio (nombre)"] || ""}
           </h3>
        
-          {whatsappNumber && (
-           
-            <a
-              href={`https://wa.me/54${whatsappNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.whatsappButton}
-            >
-                  <section className={styles.colabora}>
-                  <h4 >COLABORÁ</h4>
-                  <IoLogoWhatsapp />
-
-                  </section>
-
-            </a>
-          )}
         </div>
         <div className={styles.contactBox}>
+      
+          <div className={styles.contactInfo}>
           {comedor["Organización a la que pertenece"] && (
             <p>Organización: <strong>{comedor["Organización a la que pertenece"]}</strong></p>
           )}
@@ -122,6 +108,26 @@ function Screen({ comedor }) {
           {comedor["Contacto del/la responsable"] && (
             <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
           )}
+
+
+          </div>
+          {whatsappNumber && (
+           
+           <a
+             href={`https://wa.me/54${whatsappNumber}`}
+             target="_blank"
+             rel="noopener noreferrer"
+             className={styles.whatsappButton}
+           >
+                 <section className={styles.colabora}>
+                 <h4 >COLABORÁ</h4>
+                 <IoLogoWhatsapp />
+
+                 </section>
+
+           </a>
+         )}
+         
         </div>
       </div>
     </div>

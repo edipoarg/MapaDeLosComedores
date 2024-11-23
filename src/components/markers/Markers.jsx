@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Marker } from "react-map-gl/maplibre";
 import Daytime from "../daytime/Daytime";
 

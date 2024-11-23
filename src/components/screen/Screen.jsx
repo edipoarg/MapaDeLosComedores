@@ -113,13 +113,12 @@ function Screen({ comedor }) {
                 )}
               </p>
             )}
-            {comedor["Responsable"] && (
-              <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
-            )}
-            {comedor["Contacto del/la responsable"] && (
-              <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
-            )}
+        
           </div>
+
+          <section className={styles.colaboraBox}>
+        <div className={styles.colaboraHeader}>
+          <h4>COLABORÁ</h4>
           {cleanWhatsAppNumber && isValidWhatsAppNumber(cleanWhatsAppNumber) && (
             <a
               href={`https://wa.me/54${cleanWhatsAppNumber}`}
@@ -128,11 +127,23 @@ function Screen({ comedor }) {
               className={styles.whatsappButton}
             >
               <section className={styles.colabora}>
-                <h4>COLABORÁ</h4>
+           
+                
                 <IoLogoWhatsapp />
               </section>
             </a>
           )}
+</div>
+    {comedor["Responsable"] && (
+              <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
+            )}
+            {comedor["Contacto del/la responsable"] && (
+              <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
+            )}
+          
+
+          </section>
+         
         </div>
       </div>
     </div>

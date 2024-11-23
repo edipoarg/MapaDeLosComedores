@@ -32,7 +32,7 @@ const Daytime = ({ prestacionAlimentaria, size, isSelected }) => {
 
   // Definir estilos según el tamaño
   if (size === "small") {
-    styles = { padding: "3px", fontSize: "4px", maxWidth: "2vw" };
+    styles = { padding: "3px", fontSize: "4px", maxWidth: "3vw" };
   } else if (size === "medium") {
     styles = { padding: "8px", fontSize: "18px", maxWidth: "6vw" };
   } else if (size === "large") {

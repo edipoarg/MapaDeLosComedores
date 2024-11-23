@@ -10,7 +10,12 @@
     top: 11vh;
   }
   .filtrosTitle{
-    text-align: right;
+    text-align: center;
+    margin: 0;
+    font-size: 0.5rem;
+    background-color: #ebebeb;
+    border-radius: 45px;
+    padding: 0 1vw;
   }
   .filtroItem {
     display: flex;
@@ -18,12 +23,12 @@
     padding: 0.5vh;
     border-radius: 45px;
     font-weight: bold;
-    border: #ebebeb solid 5px;
+    border: #ebebeb solid 3px;
 justify-content: center; 
 box-shadow: 0.5vw 0.5vw 20px 1px rgba(0, 0, 0, 0.5);
 }
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
   
   

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { IoLogoWhatsapp } from "react-icons/io5";
+import { IoLogoWhatsapp, IoMailOutline, IoLinkOutline } from "react-icons/io5";
 import styles from './Screen.module.css';
 import DaytimeSky from '../daytimeSky/daytimeSky';
 
@@ -63,6 +63,17 @@ function Screen({ comedor }) {
     ? rawWhatsappNumber.toString().replace(/[^0-9]/g, '') // Limpia y convierte a cadena
     : null;
 
+  // Validación de redes institucionales
+  const rawNetworkData = comedor["Redes institucionales (IG, FB, web)"];
+  const isValidNetworkData = (data) => {
+    if (!data) return false;
+    const isURL = data.startsWith("http://") || data.startsWith("https://");
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data);
+    return isURL || isEmail;
+  };
+
+  const isNetworkDataEmail = rawNetworkData && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(rawNetworkData);
+
   return (
     <div className={styles.screen}>
       <div
@@ -75,7 +86,7 @@ function Screen({ comedor }) {
         />
         
         {comedor["Prestacion alimentaria"] && (
-          <h2>{comedor["Prestacion alimentaria"]}</h2>
+          <h2> {comedor["Prestacion alimentaria"]}</h2>
         )}
         
         {comedor["Frecuencia de funcionamiento"] && (
@@ -117,33 +128,40 @@ function Screen({ comedor }) {
           </div>
 
           <section className={styles.colaboraBox}>
-        <div className={styles.colaboraHeader}>
-          <h4>COLABORÁ</h4>
-          {cleanWhatsAppNumber && isValidWhatsAppNumber(cleanWhatsAppNumber) && (
-            <a
-              href={`https://wa.me/54${cleanWhatsAppNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.whatsappButton}
-            >
-              <section className={styles.colabora}>
-           
-                
-                <IoLogoWhatsapp />
-              </section>
-            </a>
-          )}
-</div>
-    {comedor["Responsable"] && (
+            <div className={styles.colaboraHeader}>
+              <h4>COLABORÁ</h4>
+              {cleanWhatsAppNumber && isValidWhatsAppNumber(cleanWhatsAppNumber) && (
+                <a
+                  href={`https://wa.me/54${cleanWhatsAppNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.whatsappButton}
+                >
+                  <section className={styles.colabora}>
+                    <IoLogoWhatsapp />
+                  </section>
+                </a>
+              )}
+              {isValidNetworkData(rawNetworkData) && (
+                <a
+                  href={isNetworkDataEmail ? `mailto:${rawNetworkData}` : rawNetworkData}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.networkButton}
+                >
+                  <section className={styles.colabora}>
+                    {isNetworkDataEmail ? <IoMailOutline /> : <IoLinkOutline />}
+                  </section>
+                </a>
+              )}
+            </div>
+            {comedor["Responsable"] && (
               <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>
             )}
             {comedor["Contacto del/la responsable"] && (
               <p><strong>Contacto:</strong> {comedor["Contacto del/la responsable"]}</p>
             )}
-          
-
           </section>
-         
         </div>
       </div>
     </div>

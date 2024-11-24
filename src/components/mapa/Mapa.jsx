@@ -23,14 +23,14 @@ import {
 function Mapa() {
   const mapProps = {
     initialViewState: {
-      longitude: 58.3816,
-      latitude: -34.6037,
-      zoom: 1,
+      longitude: 58.4416,
+      latitude: -34.2037,
+      zoom: 4,
       minZoom: 1,
       maxZoom: 25,
       maxBounds: [
         [-58.9, -35], // Límite inferior-izquierdo
-        [-58, -34.44], // Límite superior-derecho
+        [-57.9, -34.4], // Límite superior-derecho
       ],
     },
     style: {

@@ -25,7 +25,8 @@
 .dataSection {
   border-radius: 10px;
   color: #000; /* Ajusta el color del texto si es necesario */
-    padding: 2vh 0vw;
+    padding: 2vh 1vw;
+    padding-right: 3vw;
 
 }
 
@@ -36,10 +37,9 @@ font-family:'Odibee Sans', sans-serif;
 
 .colaboraHeader{
   display: flex;
+  gap: 5vw;
 }
 .whatsappButton {
-  margin-top: -1vh;
-  margin-left: 20vw;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -74,12 +74,12 @@ font-family:'Odibee Sans', sans-serif;
   border-radius: 10px;
   box-shadow: 1vw 1vw 0 #000;
   min-width: 45vw;
-  padding: 1vh 2vw;
+  padding: 1vh 1vw;
   height: fit-content;
 }
 
 .titleBox h3 {
-  padding-top: 2vh;
+  padding-top: 1vh;
   font-size: 1.7rem;
   margin: 0;
   font-family: 'Odibee Sans', sans-serif;
@@ -203,10 +203,18 @@ font-family:'Odibee Sans', sans-serif;
   margin: 0;
   text-align: center;
   font-size: 0.8rem;
+  
+}
+
+.colaboraHeader h4{
+  font-size: 1.5rem;
+  margin: 0;
+  margin-right: 10vw;
+  font-family: 'Odibee Sans', sans-serif;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .screen {
     position: relative;
     top: 8vh;
@@ -283,7 +291,7 @@ font-family:'Odibee Sans', sans-serif;
 
   .contactBox{
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.4);
+background: rgba(255, 255, 255, 0.1);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10px);
@@ -296,7 +304,7 @@ padding: 4vh 1vw;
     color: #ebebeb;
     border-radius: 50px; /* Ajuste del borde redondeado */
     margin-right: -5vw;
-    width: 15vw;
+    width: fit-content;
     padding: 3vh 1vw;
     display: flex;
     flex-direction: column;
@@ -308,11 +316,14 @@ padding: 4vh 1vw;
       inset 2px 2px 5px rgba(0, 0, 0, 0.6), /* Sombra interna para el relieve */
       4px 4px 8px rgba(0, 0, 0, 0.5), /* Sombra externa */
       -2px -2px 4px rgba(255, 255, 255, 0.1); /* Efecto de luz superior */
-    border: 1px solid #004d00; /* Borde sutil */
-    cursor: pointer;
+      border: #cef379 solid 4px;
+      cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
-  
+  .colaboraBox{
+    background-color: #ebebeb;
+border: 0;
+  }
   .colabora:hover {
     transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
     box-shadow: 
@@ -334,7 +345,14 @@ padding: 4vh 1vw;
 
   .whatsappButton {
     width: 0.5vw;   
-    margin-left: 10vw;
-
   }
+
+  .colaboraHeader{
+    gap: 2vw;
+  }
+  .colaboraHeader h4{
+    margin-right: 5vw;
+  }
+
+  
 }

@@ -2,6 +2,7 @@
   display: flex;
   margin-top: -8vh;
   width: 30vw;
+  gap: 2vw;
 
 }
 .container {
@@ -28,7 +29,17 @@
   left: 10vw;
   width: fit-content;
   height: fit-content;
-  padding: 1.5rem 0.8rem;
+  padding: 1.2rem 1rem;
+  font-family: "Barlow Condensed", sans-serif;;
+text-align: center;
+}
+
+.raciones h6{
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;;
+
 }
 
 .icon {
@@ -37,6 +48,10 @@
 }
 
 @media (min-width: 768px) {
+ .dataIcons{
+  gap: 1vw;
+ }
+ 
   .container {
     border-radius: 50%;
     display: flex;
@@ -56,5 +71,16 @@
   .icon {
     font-size: 8vh;
   }
+
+  .raciones{
+    font-size: 2rem;
+    padding: 4vh 1.5vw;
+  }
+  
+
+  .raciones h6{
+    font-size: 1rem;
+  }
+  
 
 }

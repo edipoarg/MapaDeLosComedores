@@ -2,7 +2,7 @@
   position: absolute;
   height: 5vh;
   width: 5vh;
-  top: 3vh;
+  top: 5vh;
   right: 5vw;
   z-index: 5000;
 }
@@ -72,7 +72,7 @@ padding-top: 10vh;
      position: absolute;
   height: 5vh;
   width: 5vh;
-  top: 3vh;
+  top: 5vh;
   right: 5vw;
   z-index: 5000;
     position: fixed;
@@ -117,6 +117,30 @@ padding-top: 10vh;
       }
     .maplibregl-map {margin-left: 0;}
 
+
+
+    .socialNetworks {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 0vh;
+      right: 8vw;
+
+    }
+    
+    .iconButton {
+      color: #333; /* Cambia según el tema */
+      font-size: 1.5rem; /* Tamaño del ícono */
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .iconButton:hover {
+      transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+      color: #5985fd; /* Color al hacer hover */
+    }
     @media (min-width: 768px) {
     
       .menuBackground{

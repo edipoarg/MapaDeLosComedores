@@ -1,6 +1,7 @@
 import styles from './Menu.module.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Importar íconos
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +16,18 @@ function Menu() {
 
   return (
     <section className={styles.menuBox}>
+      <section className={styles.socialNetworks}>
+        {/* Botones para redes sociales */}
+        <Link to="/facebook" className={styles.iconButton}>
+          <FaFacebookF />
+        </Link>
+        <Link to="/twitter" className={styles.iconButton}>
+          <FaTwitter />
+        </Link>
+        <Link to="/instagram" className={styles.iconButton}>
+          <FaInstagram />
+        </Link>
+      </section>
       <label htmlFor="menu-checkbox" className={styles.menuButton}>
         <input
           type="checkbox"

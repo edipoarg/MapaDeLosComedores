@@ -62,4 +62,16 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   text-align: justify;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+  .info { 
+    position: fixed;
+    bottom: 10vh;
+    left: unset ;
+    right: 2vw;
+    background-color:  #ebebeb;
+  padding: 5vh 3vw;
+  border-radius: 40px;
+  padding-bottom: 10vh;
+  width: 30vw;}
+  
   }

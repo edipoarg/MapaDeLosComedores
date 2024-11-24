@@ -37,13 +37,37 @@ box-shadow: 0.5vw 0.5vw 20px 1px rgba(0, 0, 0, 0.5);
     margin: 0;
   }
   
-  @media (min-width: 768px) {
-     
+  @media (min-width: 1080px) {
+    .filtrosContainer {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      width: 10vw;
+      max-width: 10vw;
+      top: 15vh;
+      align-items: center;
+    }
   .texto {
     font-size: 1rem;
     color: #333;
+    padding: 2vh 0;
   }
   .icon {
     margin-right: 10px;
+  }
+
+  .filtrosTitle{
+    text-align: center;
+    margin: 0;
+    font-size: 0.7rem;
+    background-color: #333;
+    color: #ebebeb;
+    border-radius: 45px;
+    padding: 0 1vw;
+    width: fit-content;
+  }
+  .filtroItem{
+    min-width: 10vw;
   }
   }

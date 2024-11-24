@@ -54,7 +54,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 @media (min-width: 768px) {
 
   .description {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 80vw;
     margin: 0;
     color: rgb(65, 65, 65);

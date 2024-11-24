@@ -130,6 +130,7 @@ function Screen({ comedor }) {
           <section className={styles.colaboraBox}>
             <div className={styles.colaboraHeader}>
               <h4>COLABORÁ</h4>
+              <div className={styles.botonera}>
               {cleanWhatsAppNumber && isValidWhatsAppNumber(cleanWhatsAppNumber) && (
                 <a
                   href={`https://wa.me/54${cleanWhatsAppNumber}`}
@@ -154,6 +155,7 @@ function Screen({ comedor }) {
                   </section>
                 </a>
               )}
+              </div>
             </div>
             {comedor["Responsable"] && (
               <p><strong>Responsable:</strong> {comedor["Responsable"]}</p>

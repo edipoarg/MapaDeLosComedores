@@ -42,6 +42,7 @@ function QuienesSomos() {
         Buenos Aires es una Ciudad solidaria.
       </p>
       </section>
+
     </div>
   );
 }

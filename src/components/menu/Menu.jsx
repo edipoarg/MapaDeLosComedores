@@ -18,13 +18,13 @@ function Menu() {
     <section className={styles.menuBox}>
       <section className={styles.socialNetworks}>
         {/* Botones para redes sociales */}
-        <Link to="/facebook" className={styles.iconButton}>
+        <Link to="https://www.facebook.com/share/p/19ZycPaT8i/" className={styles.iconButton}>
           <FaFacebookF />
         </Link>
-        <Link to="/twitter" className={styles.iconButton}>
+        <Link to="https://twitter.com/mapadecomedores/status/1859699647348081114" className={styles.iconButton}>
           <FaTwitter />
         </Link>
-        <Link to="/instagram" className={styles.iconButton}>
+        <Link to="https://www.instagram.com/mapadeloscomedores/" className={styles.iconButton}>
           <FaInstagram />
         </Link>
       </section>

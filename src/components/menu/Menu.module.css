@@ -158,4 +158,12 @@ padding-top: 10vh;
           .colaborar, .nosotrxs, .lista, .home{
             width: 30vw;
           }
+    .socialNetworks{
+      border: 1px #232121 solid;
+      border-radius: 25px;
+      padding: 1vh 2vw;
+      top: -1vh;
+      right: 5vw;
     }
+    
+        }

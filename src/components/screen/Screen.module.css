@@ -38,7 +38,9 @@ font-family:'Odibee Sans', sans-serif;
 
 .colaboraHeader{
   display: flex;
-  gap: 5vw;
+  align-items: center;
+  margin-top: -1.5vh;
+  padding-bottom: 1vh;
 }
 .whatsappButton {
   display: inline-flex;
@@ -109,8 +111,6 @@ font-family:'Odibee Sans', sans-serif;
 }
 .socialIcons {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
 }
 
 .screen button {
@@ -174,7 +174,7 @@ font-family:'Odibee Sans', sans-serif;
   color: #ebebeb;
   border-radius: 50px; /* Ajuste del borde redondeado */
   margin-right: -5vw;
-  width: 12vw;
+  width: 9vw;
   padding: 2vh 0vw;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,6 @@ font-family:'Odibee Sans', sans-serif;
 }
 
 .colabora:hover {
-  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
   box-shadow: 
     inset 2px 2px 8px rgba(0, 0, 0, 0.6),
     6px 6px 12px rgba(0, 0, 0, 0.7),
@@ -210,11 +209,15 @@ font-family:'Odibee Sans', sans-serif;
 .colaboraHeader h4{
   font-size: 1.5rem;
   margin: 0;
+  padding: 2vh 0;
   margin-right: 10vw;
   font-family: 'Odibee Sans', sans-serif;
 }
 
-
+.botonera{
+  display: flex;
+  gap: 5vw;
+}
 @media (min-width: 1080px) {
   .screen {
     position: relative;
@@ -304,7 +307,7 @@ padding: 4vh 1vw;
     background: linear-gradient(to bottom, #0a0a0a, #004d00);
     color: #ebebeb;
     border-radius: 50px; /* Ajuste del borde redondeado */
-    margin-right: -5vw;
+    margin-right: -0vw;
     width: fit-content;
     padding: 3vh 1vw;
     display: flex;
@@ -344,12 +347,14 @@ border: 0;
     padding-right: 1vw;
   }
 
-  .whatsappButton {
-    width: 0.5vw;   
+  .botonera{
+    flex-direction: column;
+    position: fixed;
+    gap: 1vh;
+    left: 20vw;
   }
-
   .colaboraHeader{
-    gap: 2vw;
+    gap: 5vw;
   }
   .colaboraHeader h4{
     margin-right: 5vw;

@@ -25,7 +25,8 @@
 .dataSection {
   border-radius: 10px;
   color: #000; /* Ajusta el color del texto si es necesario */
-    padding: 2vh 1vw;
+    padding: 0vh 1vw;
+    margin-top: -6vh;
     padding-right: 3vw;
 
 }

@@ -7,6 +7,29 @@
   padding-top: 15vh;
   max-width: 100%;
 }
+.downloadLink {
+  display: inline-block;
+  background-color: #333; /* Azul estándar */
+  color: white; /* Texto blanco */
+  text-align: center;
+  text-decoration: none; /* Quitar subrayado */
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 24px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones suaves */
+  font-family: "Barlow Condensed", sans-serif;
+
+}
+
+.downloadLink:hover {
+  background-color: #0056b3; /* Azul más oscuro en hover */
+  transform: scale(1.05); /* Efecto de aumento */
+}
+
+.downloadLink:active {
+  background-color: #003d80; /* Azul aún más oscuro al hacer clic */
+  transform: scale(0.95); /* Efecto de reducción */
+}
 
 .header {
   padding: 2vh 5vw;

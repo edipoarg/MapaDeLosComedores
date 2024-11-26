@@ -123,16 +123,12 @@ padding-top: 10vh;
       display: flex;
       gap: 10px;
       justify-content: center;
-      margin-bottom: 20px;
-      position: absolute;
-      top: 0vh;
-      right: 8vw;
-
+      padding: 5vh 1vw;
     }
     
     .iconButton {
-      color: #333; /* Cambia según el tema */
-      font-size: 1.5rem; /* Tamaño del ícono */
+      color: #fff; /* Cambia según el tema */
+      font-size: 3rem; /* Tamaño del ícono */
       text-decoration: none;
       transition: transform 0.2s ease, color 0.2s ease;
     }

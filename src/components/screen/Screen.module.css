@@ -307,7 +307,7 @@ padding: 4vh 1vw;
     background: linear-gradient(to bottom, #0a0a0a, #004d00);
     color: #ebebeb;
     border-radius: 50px; /* Ajuste del borde redondeado */
-    margin-right: -0vw;
+    margin-right: 0vw;
     width: fit-content;
     padding: 3vh 1vw;
     display: flex;
@@ -360,5 +360,8 @@ border: 0;
     margin-right: 5vw;
   }
 
+  .dataSection{
+    margin-top: -1vh;
+  }
   
 }

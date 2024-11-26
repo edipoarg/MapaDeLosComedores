@@ -1,0 +1,36 @@
+.mapContainer {
+    width: 100%;
+    height: auto;
+  }
+  
+  .svgMap {
+    width: 100%;
+    height: auto;
+  }
+  
+  .comunaPath {
+    fill: #eaeaea;
+    stroke: #000;
+    stroke-width: 0.002;
+  }
+  
+  .markerText {
+    font-size: 0.03rem;
+    fill: black;
+    font-weight: bold;
+  }
+  
+  .mapContainer {
+    /* Tamaño por defecto para pantallas pequeñas */
+    width: 60vw;
+    height: 55vh;
+  }
+  
+  /* Media query para pantallas con un ancho mínimo de 1080px */
+  @media (min-width: 1080px) {
+    .mapContainer {
+      width: 20vw;
+      height: 40vh;
+    }
+  }
+  

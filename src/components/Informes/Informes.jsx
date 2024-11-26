@@ -4,6 +4,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { GiKnifeFork } from "react-icons/gi";
 import { PiCookingPot, PiBowlSteam } from "react-icons/pi";
 import { MdOutlineChurch } from "react-icons/md";
+import MiniMap from './MiniMap';
 import { Link } from 'react-router-dom';
 import styles from './Informes.module.css';
 
@@ -64,24 +65,27 @@ function Informes() {
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
-        <h1>Datos e Informes</h1>
-        <button onClick={() => alert('Descargando informe...')}>Descargar Informe</button>
-      </div>
+  
+  <h1>Datos e Informes</h1>
+  <button onClick={() => alert('Descargando informe...')}>Descargar Informe</button>
+</div>
+
   
       {/* Columna 1 */}
       <div className={styles.column}>
         <div className={styles.largeBox}>
           <h1 className={styles.bigNumber}>230</h1>
           <p className={styles.description}>comedores, merenderos y ollas populares</p>
+      
         </div>
         <div className={styles.infoBox}>
-          <p><strong>Más del 15% abrió en pandemia (2020-2021)</strong></p>
-          <p>127.846 raciones semanales</p>
-          <p>820 raciones semanales por espacio</p>
-          <p>(Contabilizando solo los 156 espacios que brindaron esta información)</p>
-          <p>Existe en promedio un <strong>15% de demanda no resuelta</strong> (lista de espera)</p>
-        </div>
-        <button onClick={() => window.location.href = "/lista"}>Ver Lista</button>
+  <p><span style={{ fontSize: '3rem' }}>+15%</span> abrió en pandemia (2020-2021)</p>
+  <p><span style={{ fontSize: '3rem' }}>127.846</span> raciones semanales</p>
+  <p><span style={{ fontSize: '3rem' }}>820</span> raciones semanales por espacio</p>
+  <p>(Contabilizando solo los 156 espacios que brindaron esta información)</p>
+  <p><span style={{ fontSize: '2rem' }}><strong>Existe en promedio un 15% de demanda no resuelta</strong></span> (lista de espera)</p>
+</div>
+      
       </div>
   
       {/* Columna 2 */}
@@ -116,10 +120,11 @@ function Informes() {
   
       {/* Columna 3 */}
       <div className={styles.column}>
-        <div className={styles.dataBox}>
-          <p><strong>El 53%</strong> están en barrios populares</p>
-          <p><strong>El 71%</strong> se encuentran en las comunas 1, 4, 7 y 8</p>
-        </div>
+      <div className={styles.dataBox}>
+        <MiniMap></MiniMap>
+  <p><strong>El <span style={{ fontSize: '3rem' }}>53%</span></strong> están en barrios populares</p>
+  <p><strong>El <span style={{ fontSize: '3rem' }}>71%</span></strong> se encuentran en las comunas 1, 4, 7 y 8</p>
+</div>
       </div>
     </div>
   );

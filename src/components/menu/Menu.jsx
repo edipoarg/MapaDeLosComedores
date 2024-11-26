@@ -16,18 +16,7 @@ function Menu() {
 
   return (
     <section className={styles.menuBox}>
-      <section className={styles.socialNetworks}>
-        {/* Botones para redes sociales */}
-        <Link to="https://www.facebook.com/share/p/19ZycPaT8i/" className={styles.iconButton}>
-          <FaFacebookF />
-        </Link>
-        <Link to="https://twitter.com/mapadecomedores/status/1859699647348081114" className={styles.iconButton}>
-          <FaTwitter />
-        </Link>
-        <Link to="https://www.instagram.com/mapadeloscomedores/" className={styles.iconButton}>
-          <FaInstagram />
-        </Link>
-      </section>
+     
       <label htmlFor="menu-checkbox" className={styles.menuButton}>
         <input
           type="checkbox"
@@ -65,6 +54,18 @@ function Menu() {
                 <h3 className={styles.nosotrxs}>* Quiénes Somos </h3>
               </Link>
             </a>
+            <section className={styles.socialNetworks}>
+        {/* Botones para redes sociales */}
+        <Link to="https://www.facebook.com/share/p/19ZycPaT8i/" className={styles.iconButton}>
+          <FaFacebookF />
+        </Link>
+        <Link to="https://twitter.com/mapadecomedores/status/1859699647348081114" className={styles.iconButton}>
+          <FaTwitter />
+        </Link>
+        <Link to="https://www.instagram.com/mapadeloscomedores/" className={styles.iconButton}>
+          <FaInstagram />
+        </Link>
+      </section>
           </div>
         </div>
       )}

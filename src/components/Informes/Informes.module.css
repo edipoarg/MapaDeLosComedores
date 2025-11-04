@@ -7,34 +7,45 @@
   padding-top: 15vh;
   max-width: 100%;
 }
+
 .downloadLink {
   display: inline-block;
-  background-color: #333; /* Azul estándar */
-  color: white; /* Texto blanco */
+  background-color: #333;
+  /* Azul estándar */
+  color: white;
+  /* Texto blanco */
   text-align: center;
-  text-decoration: none; /* Quitar subrayado */
+  text-decoration: none;
+  /* Quitar subrayado */
   font-size: 1rem;
-  padding: 0.5rem 1rem; /* Espaciado interno */
-  border-radius: 24px; /* Bordes redondeados */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones suaves */
+  padding: 0.5rem 1rem;
+  /* Espaciado interno */
+  border-radius: 24px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Animaciones suaves */
   font-family: "Barlow Condensed", sans-serif;
 
 }
 
 .downloadLink:hover {
-  background-color: #0056b3; /* Azul más oscuro en hover */
-  transform: scale(1.05); /* Efecto de aumento */
+  background-color: #0056b3;
+  /* Azul más oscuro en hover */
+  transform: scale(1.05);
+  /* Efecto de aumento */
 }
 
 .downloadLink:active {
-  background-color: #003d80; /* Azul aún más oscuro al hacer clic */
-  transform: scale(0.95); /* Efecto de reducción */
+  background-color: #003d80;
+  /* Azul aún más oscuro al hacer clic */
+  transform: scale(0.95);
+  /* Efecto de reducción */
 }
 
 .header {
   padding: 2vh 5vw;
   width: 75vw;
-    justify-self: center;  
+  justify-self: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -65,6 +76,7 @@
 .header button:hover {
   background-color: #0056b3;
 }
+
 .column {
   gap: 1rem;
 }
@@ -90,7 +102,7 @@
 .infoBox p,
 .labels .labelItem {
   font-family: "Barlow Condensed", sans-serif;
-margin: 0;
+  margin: 0;
 }
 
 .description {
@@ -129,7 +141,7 @@ margin: 0;
 .chartBox {
   padding: 1rem;
   text-align: center;
-   border-radius: 8px;
+  border-radius: 8px;
   box-shadow: #333 2px 2px 50px;
   padding: 2vh 5vw;
   width: 75vw;
@@ -147,7 +159,7 @@ margin: 0;
 
 .labels {
   list-style: none;
-  padding: 0;  
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -164,12 +176,13 @@ margin: 0;
   margin-bottom: 0.5rem;
 }
 
-.dataBox{
+.dataBox {
   border-radius: 8px;
   box-shadow: #333 2px 2px 50px;
   padding: 2vh 5vw;
   width: 75vw;
 }
+
 
 /* Layout de tres columnas para pantallas grandes */
 @media (min-width: 768px) {
@@ -183,7 +196,10 @@ margin: 0;
     width: 75vw;
   }
 
-  .dataBox, .infoBox, .largeBox, .chartBox{
+  .dataBox,
+  .infoBox,
+  .largeBox,
+  .chartBox {
     width: 25vw;
     padding: 2vh 1vw;
   }

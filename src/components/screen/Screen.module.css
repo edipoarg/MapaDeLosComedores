@@ -1,0 +1,367 @@
+.screen {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 100vw;
+  width: 100vw;
+  background-color: #ebebeb; 
+  padding: 20px;
+  padding-left: 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  z-index: 10;
+  display: flex;
+  box-shadow: 1px -2px 30px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+.dataSection, .timeSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.dataSection {
+  border-radius: 10px;
+  color: #000; /* Ajusta el color del texto si es necesario */
+    padding: 0vh 1vw;
+    margin-top: -6vh;
+    padding-right: 3vw;
+
+}
+
+.name{
+font-size: 2rem;
+font-family:'Odibee Sans', sans-serif;
+}
+
+.colaboraHeader{
+  display: flex;
+  align-items: center;
+  margin-top: -1.5vh;
+  padding-bottom: 1vh;
+}
+.whatsappButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1);
+}
+
+.timeSection {
+  min-width: 35vw;
+  width: 35vw;
+  max-width: 35vw;
+  padding: 0.5vh 3vw;
+
+}
+.timeSection h2 {
+  font-family: 'Odibee Sans', sans-serif;
+  color: #000;
+  font-size: 1.7rem;
+  
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  background-color: rgb(248, 244, 228);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 1vw 1vw 0 #000;
+  min-width: 45vw;
+  padding: 1vh 1vw;
+  height: fit-content;
+}
+
+.titleBox h3 {
+  padding-top: 1vh;
+  font-size: 1.7rem;
+  margin: 0;
+  font-family: 'Odibee Sans', sans-serif;
+  color: #f27025;
+  line-height: 1;
+}
+
+.titleBox p, .timeSection p {
+  font-size: 1.3rem;
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.contactBox {
+  padding: 1vh 1vw ;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactBox p{margin: 0}
+
+.contactInfo{
+  padding: 1vh 1vw;
+}
+.socialIcons {
+  display: flex;
+}
+
+.screen button {
+  background-color: #ff69b4;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.screen button:hover {
+  transform: translateY(-3px);
+}
+
+.screen button:active {
+  transform: translateY(1px);
+}
+
+.prestacion {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f27025;
+}
+
+.colaboraBox{
+  border-radius: 14px;
+  border: solid 1px;
+  padding: 1vh 1vw;
+}
+
+.colaboraBox h4{
+  margin: 0;
+  padding: 1vh 0;
+}
+.defaultText{
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0vh 10vw;
+  text-align: justify;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.defaultTitle{
+  padding: 3vh 10vw;
+  text-align: justify;
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Odibee Sans', sans-serif;
+  color: #333;
+  line-height: 1;
+}
+
+
+.colabora {
+  background: linear-gradient(to bottom, #0a0a0a, #004d00);
+  color: #ebebeb;
+  border-radius: 50px; /* Ajuste del borde redondeado */
+  margin-right: -5vw;
+  width: 9vw;
+  padding: 2vh 0vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; /* Ajustar según sea necesario */
+  font-weight: bold;
+  box-shadow: 
+    inset 2px 2px 5px rgba(0, 0, 0, 0.6), /* Sombra interna para el relieve */
+    4px 4px 8px rgba(0, 0, 0, 0.5), /* Sombra externa */
+    -2px -2px 4px rgba(255, 255, 255, 0.1); /* Efecto de luz superior */
+  border: 1px solid #004d00; /* Borde sutil */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.colabora:hover {
+  box-shadow: 
+    inset 2px 2px 8px rgba(0, 0, 0, 0.6),
+    6px 6px 12px rgba(0, 0, 0, 0.7),
+    -2px -2px 6px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom, #0a0a0a, #55db17);}
+
+
+.colabora h4{
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  
+}
+
+.colaboraHeader h4{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 2vh 0;
+  margin-right: 10vw;
+  font-family: 'Odibee Sans', sans-serif;
+}
+
+.botonera{
+  display: flex;
+  gap: 5vw;
+}
+@media (min-width: 1080px) {
+  .screen {
+    position: relative;
+    top: 8vh;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    width: 22vw;
+    height: fit-content;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.0);
+    box-shadow: none;
+  }
+
+  .dataSection {
+    max-width: 22vw;
+    border-radius: 45px;
+    color: #333; /* Ajusta el color del texto si es necesario */
+      padding: 2vh 0vw;
+  
+  }
+  
+  .defaultMessage{
+    background-color: #fff; 
+    padding: 20px;
+    padding-left: 0;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  .timeSection {
+    min-width: 15vw;
+    width: 18vw;
+    max-width: 18vw;
+    padding: 10px;
+    padding: 1vh 2vw;
+    margin-top: 0vh;
+    min-height: 25vh;
+    height: fit-content;
+    border-left: none;
+    background-color: #ebebeb;
+    border-radius: 60px;
+    box-shadow: 1px -2px 30px 0.5px rgba(0, 0, 0, 0.4);
+  }
+
+  .titleBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    background-color: rgb(248, 244, 228);
+    border: 5px solid #ebebeb;
+    border-radius: 200px;
+    box-shadow: 0.5vw 0.5vw 20px 1px rgba(0, 0, 0, 0.5);
+    min-width: 8vw;
+    padding: 1vh 3vw;
+    height: fit-content;
+  }
+
+  .defaultText{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0vh 2vw;
+    text-align: justify;
+  }
+  
+  .defaultTitle{
+    padding: 3vh 2vw;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    line-height: 1;
+  }
+
+  .contactBox{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+padding: 4vh 1vw;
+  }
+
+  .colabora {
+    background: linear-gradient(to bottom, #0a0a0a, #004d00);
+    color: #ebebeb;
+    border-radius: 50px; /* Ajuste del borde redondeado */
+    margin-right: 0vw;
+    width: fit-content;
+    padding: 3vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Ajustar según sea necesario */
+    font-weight: bold;
+    box-shadow: 
+      inset 2px 2px 5px rgba(0, 0, 0, 0.6), /* Sombra interna para el relieve */
+      4px 4px 8px rgba(0, 0, 0, 0.5), /* Sombra externa */
+      -2px -2px 4px rgba(255, 255, 255, 0.1); /* Efecto de luz superior */
+      border: #cef379 solid 4px;
+      cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .colaboraBox{
+    background-color: #ebebeb;
+border: 0;
+  }
+  .colabora:hover {
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 
+      inset 2px 2px 8px rgba(0, 0, 0, 0.6),
+      6px 6px 12px rgba(0, 0, 0, 0.7),
+      -2px -2px 6px rgba(255, 255, 255, 0.2);
+      background: linear-gradient(to bottom, #0a0a0a, #55db17);}
+  
+
+  .colabora h4{
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .contactInfo{
+    padding-right: 1vw;
+  }
+
+  .botonera{
+    flex-direction: column;
+    position: fixed;
+    gap: 1vh;
+    left: 20vw;
+  }
+  .colaboraHeader{
+    gap: 5vw;
+  }
+  .colaboraHeader h4{
+    margin-right: 5vw;
+  }
+
+  .dataSection{
+    margin-top: -1vh;
+  }
+  
+}

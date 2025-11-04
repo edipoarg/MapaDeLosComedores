@@ -1,0 +1,78 @@
+.mapa {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+    background-color: #e3f2fd; /* Fondo pastel claro */
+    z-index: 1;
+    
+  }
+  
+  .marker {
+    width: 30px;
+    height: 30px;
+    background-color: #b0e0e6; /* Color pastel moderno */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .marker:hover {
+    background-color: #add8e6; /* Color pastel más oscuro al pasar el mouse */
+    transform: scale(1.1);
+  }
+  
+  .infoBox {
+    position: fixed;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+    min-height: 20vh;
+  }
+  
+  .infoBox h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .infoBox p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+
+  }
+  
+  .infoBox button {
+    background-color: #32cd32; /* Color fluorescente pastel */
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 0;
+  
+}
+  
+  .infoBox button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .infoBox button:active {
+    transform: translateY(1px);
+  }
+  

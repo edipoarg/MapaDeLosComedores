@@ -1,0 +1,165 @@
+.menuBox{
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 5vh;
+  right: 5vw;
+  z-index: 5000;
+}
+
+.menuButton {
+    /* Style the label element as a button here */
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+.menu a h3:hover{
+    background-color: #232121 !important;
+}
+.colaborar, .nosotrxs, .lista, .home{
+  font-family: 'Odibee Sans';
+  border-radius: 45px;
+  padding-top: 2vh;
+  width: 70vw;
+  height: 10vh;
+ margin: auto;
+ text-align: left;
+ padding-left: 5vw;
+
+}
+  .home {
+   
+   background-color: #5985fd ;
+   color: rgb(186, 225, 123) ;
+  
+  }
+  .nosotrxs {
+   
+    background-color: #c482e7;
+    color: rgb(104, 72, 207) ;
+ 
+  }
+  .lista{
+    background-color: #e49635;
+    color: rgb(186, 243, 117) ;
+
+  }
+  .colaborar{
+
+    background-color: #dcef6c;
+    color: rgb(176, 112, 218) ;
+  }
+
+  .menuBackground{
+background-color: rgba(49, 49, 49, 0.902);
+position: fixed;
+width: 100vw;
+height: 89vh;
+top: 12vh;
+left: 0;
+font-size: 2rem;
+padding-top: 10vh;
+  }
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+  
+  .hamburger {
+     position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 5vh;
+  right: 5vw;
+  z-index: 5000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 24px;
+    
+  }
+  
+  .bar {
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+  
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .checkbox:checked + .hamburger > .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+    .menu {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: auto;
+      
+    }
+    .menu a {
+        text-align: center;
+        float: none;
+      }
+    .maplibregl-map {margin-left: 0;}
+
+
+
+    .socialNetworks {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      padding: 5vh 1vw;
+    }
+    
+    .iconButton {
+      color: #fff; /* Cambia según el tema */
+      font-size: 3rem; /* Tamaño del ícono */
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .iconButton:hover {
+      transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+      color: #5985fd; /* Color al hacer hover */
+    }
+    @media (min-width: 768px) {
+    
+      .menuBackground{
+        background-color: rgba(49, 49, 49, 0.902);
+        position: fixed;
+        width: 100vw;
+        height: 89vh;
+        top: 12vh;
+        left: 0;
+        font-size: 2rem;
+        padding-top: 5vh;
+        padding-left: 25vw;
+          }
+
+          .colaborar, .nosotrxs, .lista, .home{
+            width: 30vw;
+          }
+    .socialNetworks{
+      border: 1px #232121 solid;
+      border-radius: 25px;
+      padding: 1vh 2vw;
+      top: -1vh;
+      right: 5vw;
+    }
+    
+        }

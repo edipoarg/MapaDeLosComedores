@@ -1,0 +1,38 @@
+.smallMarker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5a5f;
+  border-radius: 50%;
+  width: 15px; /* Tamaño pequeño */
+  height: 15px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mediumMarker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5a5f;
+  border-radius: 50%;
+  width: 25px; /* Tamaño mediano */
+  height: 25px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.largeMarker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5a5f;
+  border-radius: 50%;
+  width: 35px; /* Tamaño grande */
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

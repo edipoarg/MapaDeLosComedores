@@ -1,0 +1,98 @@
+.fullWidthBlock {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* Bloque de encabezado */
+.headerBlock {
+  text-align: left;
+  margin-bottom: 3rem;
+  
+}
+
+.headerBlock h2 {
+  font-size: 2.5rem;
+  font-family: 'Odibee Sans', sans-serif;
+  margin: 0.5rem 0;
+}
+
+.headerBlock h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1rem;
+  font-weight: normal;
+}
+
+.headerBlock .description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Grid de entrevistas */
+.gridContainer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; /* mobile 1 columna */
+}
+
+/* Cada entrevista: video a la izquierda, texto a la derecha */
+.entrevista {
+  display: flex;
+  flex-direction: column; /* mobile */
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: #333 2px 2px 50px;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.textContent {
+  margin-top: 1rem;
+}
+
+.textContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.textContent p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.video {
+  width: 60vw;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Conclusión */
+.conclusionBlock {
+  margin-top: 3rem;
+  padding: 2rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+/* Desktop: 2 columnas y video a la izquierda */
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .entrevista {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    padding-right: 5vw;
+  }
+  .textContent {
+    margin-top: 0;
+  }
+  .video {
+  width: 16vw;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+}

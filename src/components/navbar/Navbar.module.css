@@ -1,0 +1,49 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+    padding: 1vh 2vw;
+    display: flex;
+    gap: 1vh;
+    background-color: #ebebeb;
+    justify-content: left;
+    font-family: 'Odibee Sans';
+    color: rgb(65, 65, 65);
+}
+
+.title{
+  display: flex;
+ gap: 3vw;
+ padding-left: 5vw;
+}
+
+.logo{
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+    font-size: 1.5rem;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.logoimg
+{height: 10vh;
+  width: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../public/logoComedores.png");
+border-radius: 180px;}
+.us{
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+@media (min-width: 768px) {
+.logo{
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 2vh;
+  padding-left: 22vw;
+}
+}

@@ -8,7 +8,7 @@ const entrevistasData = [
         descripcion: `Empezó cocinando en su casa para personas en situación de calle y hoy el comedor entrega entre 200 y 250 raciones diarias. En el último tiempo notaron cambios en quienes se acercan: además de personas sin techo, ahora vienen más niños y jubilados que tienen vivienda pero no les alcanza para alimentarse. El comedor funciona todos los días, aunque los recursos no son suficientes. Con rifas y colectas intentan cubrir lo que falta.`,
     },
     {
-        nombre: "Jubilado de 74 años",
+        nombre: "José - Jubilado de 74 años",
         video: "https://video.wixstatic.com/video/81c26f_207baf1c10884f04a6a3cc7bcd84e147/1080p/mp4/file.mp4",
         descripcion: `Vive en una pensión junto a sus dos hijos, uno de ellos con discapacidad. Con su jubilación y pensión no llega a cubrir alquiler y comida, sobre todo con precios que aumentan todo el tiempo y con ingresos que no alcanzan. Desde hace un año, el comedor del barrio es el lugar al que acude todos los días. Lo valora por la comida, pero también por la cercanía y el trato.`,
     },

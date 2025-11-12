@@ -162,11 +162,13 @@ const [chartData2025] = useState({
         {/* Columna 1 */}
         <div className={styles.column}>
           <div className={styles.infoBox}>
-            <p><span style={{ fontSize: '3rem' }}>+55%</span> de raciones servidas respecto al año anterior</p>
+                        <h1 className={styles.bigNumber}>+55%</h1>
+            <p>de raciones servidas respecto al año anterior</p>
             <p><span style={{ fontSize: '2rem' }}><strong>Incremento de raciones 2024–2025</strong></span> </p>
-                 {/* Placa 2: gráfico +55% */}
-          <div style={{ height: '240px' }}>
-            <Bar data={barData} options={barOptions} />
+               <p><span style={{ fontSize: '3rem' }}>70%</span> niños, niñas y adolescentes</p>
+            <p><span style={{ fontSize: '3rem' }}>17%</span> adultos mayores</p>
+            <p><span style={{ fontSize: '3rem' }}></span> relevamiento específico realizado en 25 comedores y merenderos, sobre el total de raciones repartidas.</p>
+          <div style={{ padding: '1rem 0' }}>
         </div>
 
           </div>
@@ -190,7 +192,7 @@ const [chartData2025] = useState({
   </div>
 </div>
 
- {/* Columna 1 */}
+ {/* Columna 3 */}
         <div className={styles.column}>
           <div className={styles.largeBox}>
             
@@ -203,12 +205,7 @@ const [chartData2025] = useState({
             <h1 className={styles.bigNumber}>6%</h1>
             <p className={styles.description}>de los espacios pasaron de merenderos a comedores en el último año.</p>
           </div>
-          <div className={styles.infoBox}>
-            <p><span style={{ fontSize: '3rem' }}>70%</span> niños, niñas y adolescentes</p>
-            <p><span style={{ fontSize: '3rem' }}>17%</span> adultos mayores</p>
-            <p><span style={{ fontSize: '3rem' }}></span> relevamiento específico realizado en 20 comedores y merenderos, sobre el total de raciones repartidas.</p>
-            
-          </div>
+      
         </div>
         
 

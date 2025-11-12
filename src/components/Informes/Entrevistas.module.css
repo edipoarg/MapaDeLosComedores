@@ -79,7 +79,7 @@
 }
 
 /* Desktop: 2 columnas y video a la izquierda */
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .gridContainer {
         grid-template-columns: repeat(2, 1fr);
     }

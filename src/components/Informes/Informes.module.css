@@ -186,7 +186,7 @@
 
 
 /* Layout de tres columnas para pantallas grandes */
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;

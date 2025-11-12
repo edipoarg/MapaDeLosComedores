@@ -241,7 +241,7 @@ const [chartData2025] = useState({
             <p><span style={{ fontSize: '3rem' }}>127.846</span> raciones semanales</p>
             <p><span style={{ fontSize: '3rem' }}>820</span> raciones semanales por espacio</p>
             <p>(Contabilizando solo los 156 espacios que brindaron esta información)</p>
-            <p><span style={{ fontSize: '2rem' }}><strong>Existe en promedio un 15% de demanda no resuelta</strong></span> (lista de espera)</p>
+            <p><span style={{ fontSize: '2rem' }}><strong>Existe en promedio un 15% de demanda no resuelta</strong></span> (lista de espera).</p>
           </div>
         </div>
 

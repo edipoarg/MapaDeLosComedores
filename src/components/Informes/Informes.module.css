@@ -5,7 +5,8 @@
   gap: 1rem;
   padding: 1rem;
   padding-top: 15vh;
-  max-width: 100%;
+  max-width: 90%;
+  margin: auto;
 }
 
 .downloadLink {

@@ -51,12 +51,12 @@ function Informes() {
     datasets: [
       {
         label: '2024',
-        data: [9, 23, 15, 53],
+        data: [24, 24, 12, 40],
         backgroundColor: '#0dceea',
       },
       {
         label: '2025',
-        data: [9, 17, 15, 59],
+        data: [24, 20, 12, 44],
         backgroundColor: '#002d42',
       },
     ],
@@ -98,10 +98,10 @@ function Informes() {
 
   // === Tortas para Informe 2025 ===
 const [chartData2025] = useState({
-  labels: ['Comedores', 'Merenderos', 'Ollas Populares', 'Parroquias'],
+  labels: ['Comedores', 'Merenderos', 'Ollas Populares', 'Olla popular y merendero'],
   datasets: [
     {
-      data: [59, 17, 9, 15], // datos 2025
+      data: [44, 20, 24, 12], // datos 2025
       backgroundColor: ['#a930ea', '#ff8ce9', '#afeb00', '#0dceea'], // violetas y coloridos
       hoverOffset: 8,
     },

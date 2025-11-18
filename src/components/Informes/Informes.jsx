@@ -51,12 +51,12 @@ function Informes() {
     datasets: [
       {
         label: '2024',
-        data: [9, 23, 15, 53],
+        data: [24, 24, 12, 40],
         backgroundColor: '#0dceea',
       },
       {
         label: '2025',
-        data: [9, 17, 15, 59],
+        data: [24, 20, 12, 44],
         backgroundColor: '#002d42',
       },
     ],
@@ -98,10 +98,10 @@ function Informes() {
 
   // === Tortas para Informe 2025 ===
 const [chartData2025] = useState({
-  labels: ['Comedores', 'Merenderos', 'Ollas Populares', 'Parroquias'],
+  labels: ['Comedores', 'Merenderos', 'Ollas Populares', 'Olla popular y merendero'],
   datasets: [
     {
-      data: [59, 17, 9, 15], // datos 2025
+      data: [44, 20, 24, 12], // datos 2025
       backgroundColor: ['#a930ea', '#ff8ce9', '#afeb00', '#0dceea'], // violetas y coloridos
       hoverOffset: 8,
     },
@@ -118,25 +118,25 @@ const [chartData2025] = useState({
   const distributionDetails = [
     {
       label: 'Comedores',
-      value: 82,
+      value: 44,
       color: '#0dceea',
       icon: <GiKnifeFork style={{ color: 'white', fontSize: '1.2rem' }} />,
     },
     {
       label: 'Merenderos',
-      value: 63,
+      value: 20,
       color: '#ff8ce9',
       icon: <PiBowlSteam style={{ color: 'white', fontSize: '1.2rem' }} />,
     },
     {
       label: 'Ollas Populares',
-      value: 39,
+      value: 24,
       color: '#afeb00',
       icon: <PiCookingPot style={{ color: 'white', fontSize: '1.2rem' }} />,
     },
     {
       label: 'Parroquias',
-      value: 47,
+      value: 12,
       color: '#a930ea',
       icon: <MdOutlineChurch style={{ color: 'white', fontSize: '1.2rem' }} />,
     },
@@ -149,7 +149,7 @@ const [chartData2025] = useState({
         <div className={styles.header}>
           <h1>Informe 2025</h1>
           <Link
-            to="https://b8fb8220-56a0-4c66-8c04-1f822c5cf036.filesusr.com/ugd/0f4ca0_ddad7b5e80a74583bf56334902bc0da8.pdf"
+            to="https://b8fb8220-56a0-4c66-8c04-1f822c5cf036.filesusr.com/ugd/0f4ca0_3d7c01f3953848e9b5c68cf329ae4c1a.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.downloadLink}
@@ -162,7 +162,7 @@ const [chartData2025] = useState({
         {/* Columna 1 */}
         <div className={styles.column}>
           <div className={styles.infoBox}>
-                        <h1 className={styles.bigNumber}>+55%</h1>
+                        <h1 className={styles.bigNumber}>+24,5%</h1>
             <p>de raciones servidas respecto al año anterior</p>
             <p><span style={{ fontSize: '2rem' }}><strong>Incremento de raciones 2024–2025</strong></span> </p>
                <p><span style={{ fontSize: '3rem' }}>70%</span> niños, niñas y adolescentes</p>
@@ -184,10 +184,10 @@ const [chartData2025] = useState({
       <Doughnut data={chartData2025} options={options} />
     </div>
     <ul className={styles.labels}>
-      <li className={styles.labelItem} style={{ background: '#a930ea' }}>Comedor: 59%</li>
-      <li className={styles.labelItem} style={{ background: '#ff8ce9' }}>Merendero: 17%</li>
-      <li className={styles.labelItem} style={{ background: '#afeb00' }}>Olla popular: 9%</li>
-      <li className={styles.labelItem} style={{ background: '#0dceea' }}>Olla y merendero: 15%</li>
+      <li className={styles.labelItem} style={{ background: '#a930ea' }}>Comedor: 44%</li>
+      <li className={styles.labelItem} style={{ background: '#ff8ce9' }}>Merendero: 20%</li>
+      <li className={styles.labelItem} style={{ background: '#afeb00' }}>Olla popular: 24%</li>
+      <li className={styles.labelItem} style={{ background: '#0dceea' }}>Olla y merendero: 12%</li>
     </ul>
   </div>
 </div>
@@ -202,7 +202,7 @@ const [chartData2025] = useState({
             <Bar data={tipoEspaciosData} options={tipoEspaciosOptions} />
           </div>
           <p>Distribución porcentual según tipo de espacio (comparativo interanual)</p>
-            <h1 className={styles.bigNumber}>6%</h1>
+            <h1 className={styles.bigNumber}>4%</h1>
             <p className={styles.description}>de los espacios pasaron de merenderos a comedores en el último año.</p>
           </div>
       
